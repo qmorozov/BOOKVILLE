@@ -1,0 +1,13 @@
+@import "fonts";
+
+// === FONT ===
+
+@mixin Roboto($weight) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
+}
+
+@mixin OpenSans($weight) {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: $weight;
+}
