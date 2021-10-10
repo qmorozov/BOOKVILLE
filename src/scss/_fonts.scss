@@ -1,57 +1,48 @@
-// // === ROBOTO ===
+// === MONTSERRAT ===
 
-// @font-face {
-//     // === REGULAR ===
-//     font-family: 'Roboto';
-//     src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 400;
-// }
+@font-face {
+    // === THIN ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Thin.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-Thin.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+}
 
-// @font-face {
-//     // === MEDIUM ===
-//     font-family: 'Roboto';
-//     src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Medium.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 500;
-// }
+@font-face {
+    // === LIGHT ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-Light.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+}
 
-// @font-face {
-//     // === BOLD ===
-//     font-family: 'Roboto';
-//     src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 700;
-// }
+@font-face {
+    // === REGULAR ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
 
-// // === OPEN-SANS ===
+@font-face {
+    // === MEDIUM ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-Medium.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+}
 
-// @font-face {
-//     // === REGULAR ===
-//     font-family: 'OpenSans';
-//     src: url('../fonts/Roboto/OpenSans-Regular.woff2') format('woff2'), url('../fonts/Roboto/OpenSans-Regular.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 400;
-// }
+@font-face {
+    // === SEMIBOLD ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
 
-// @font-face {
-//     // === REGULAR ===
-//     font-family: 'OpenSans';
-//     src: url('../fonts/Roboto/OpenSans-SemiBold.woff2') format('woff2'), url('../fonts/Roboto/OpenSans-SemiBold.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 600;
-// }
-
-// @font-face {
-//     // === REGULAR ===
-//     font-family: 'OpenSans';
-//     src: url('../fonts/Roboto/OpenSans-Bold.woff2') format('woff2'), url('../fonts/Roboto/OpenSans-Bold.woff') format('woff');
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 700;
-// }
+// === / MONTSERRAT ===

@@ -2,12 +2,66 @@
 
 // === FONT ===
 
-@mixin Roboto($weight) {
-    font-family: 'Roboto', sans-serif;
+@mixin Montserrat($weight) {
+    font-family: 'Montserrat', sans-serif;
     font-weight: $weight;
 }
 
-@mixin OpenSans($weight) {
-    font-family: 'OpenSans', sans-serif;
-    font-weight: $weight;
-}
+// === FONT-WEIGHT ===
+
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+
+// === FONT-SIZE ===
+
+$fs-xxs: 14px;
+$fs-xs: 16px;
+$fs-s: 18px;
+$fs-m: 20px;
+$fs-l: 22px;
+$fs-xl: 36px;
+
+// === LINE HEIGHT ===
+
+$lh-xs: 17px;
+$lh-s: 20px;
+$lh-m: 22px;
+$lh-l: 24px;
+$lh-xl: 27px;
+$lh-xxl: 44px;
+
+// === ANIMATION ===
+
+$transition: all .4s ease-in-out;
+
+// === COLOR ===
+
+// === DARK COLORS ===
+
+$dark-50: black;
+$dark-100: #181818;
+$dark-150: #373737;
+$dark-200: #343434;
+$dark-250: #675b56;
+$dark-300: #606060;
+$dark-350: #4f4f4f;
+$dark-400: #7d6c65;
+$dark-450: #887569;
+$dark-500: #897668;
+$dark-550: #787878;
+$dark-600: #999;
+$dark-650: #9c9c9c;
+
+// === LIGHT COLORS ===
+
+$light-50: white;
+$light-100: #f8f8f8;
+$light-150: #f5f5f5;
+$light-200: #faf8f6;
+$light-250: #f4f0eb;
+$light-300: #e9e5e0;
+$light-350: #cdcdcd;
+$light-400: #f3e4de;
