@@ -94,6 +94,34 @@ body {
     @include Montserrat($weight: $fw-regular);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+    min-height: 100vh;
+    // padding-top: 70px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// === LOGO ===
+
+.logo__img {
+    width: 155px;
+    height: 84px;
+    transition: $transition;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
 // === BUTTON ===
 
 .btn {
@@ -598,14 +626,4 @@ body {
             display: none;
         }
     }
-}
-
-.wrapper {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-around;
-    // height: 500px;
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
