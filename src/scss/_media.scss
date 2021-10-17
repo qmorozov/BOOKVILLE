@@ -5,12 +5,27 @@
     .header-social {
         margin-right: 0;
     }
+
+    // === FOOTER ===
+    .footer-menu__item + .footer-menu__item {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 1100px) {
     // === HEADER ===
     .menu__list-item + .menu__list-item {
         margin-left: 20px;
+    }
+
+    // === FOOTER ===
+    .footer-menu__item {
+        font-size: $fs-xs;
+        line-height: $lh-s;
+
+        & + & {
+            margin-left: 10px;
+        }
     }
 }
 
@@ -32,6 +47,12 @@
     .dropdown {
         width: 100%;
         padding: 20px 20px 10px 20px;
+    }
+
+    // === FOOTER ===
+    .footer__logo .logo__img {
+        width: 120px;
+        height: 65px;
     }
 }
 
@@ -57,6 +78,34 @@
         &-item {
             font-size: 16px;
             line-height: 20px;
+        }
+    }
+
+    // === FOOTER ===
+    .footer {
+        &-inner {
+            flex-direction: column;
+            padding: 16px 0 20px 0;
+        }
+
+        &__logo {
+            margin-bottom: 22px;
+        }
+
+        &-menu {
+            margin-bottom: 26px;
+
+            &__list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__item {
+                & + & {
+                    margin-top: 13px;
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

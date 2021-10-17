@@ -1,0 +1,34 @@
+// === FOOTER ===
+.footer {
+    background-color: $light-150;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 136px;
+        padding: 19px 0 33px;
+    }
+}
+
+.footer-menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        font-size: $fs-s;
+        line-height: $lh-m;
+        color: $dark-350;
+        transition: $transition;
+
+        & + & {
+            margin-left: 36px;
+        }
+
+        &:hover {
+            color: lighten($dark-550, 15);
+        }
+    }
+}
+// === / FOOTER ===
