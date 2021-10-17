@@ -98,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 900px;
+    height: 1500px;
     min-height: 100vh;
     // padding-top: 70px;
     overflow: hidden;
@@ -239,16 +239,16 @@ body {
     }
 }
 
-// @media (max-width: 500px) {
-//     .btn {
-//         padding: 16px 20px;
+@media (max-width: 500px) {
+    .btn {
+        padding: 16px 20px;
 
-//         &__text {
-//             font-size: 12px;
-//             line-height: 15px;
-//         }
-//     }
-// }
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
 
 // === INPUT ===
 
