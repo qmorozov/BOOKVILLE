@@ -32,6 +32,11 @@ html {
     scrollbar-width: thin;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 div {
     margin: 0;
 }
@@ -258,6 +263,7 @@ body {
     font-size: $fs-xs;
     line-height: $lh-s;
     color: #9f9f9f;
+    background-color: $light-50;
     border: 1px solid #959595;
     border-radius: 8px;
 }

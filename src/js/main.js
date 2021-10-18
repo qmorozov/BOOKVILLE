@@ -14,7 +14,9 @@ window.onscroll = function showHeader() {
 
 const header = document.querySelector('.header');
 
-document.querySelector('.burger-btn').addEventListener('click', function() {
+document.querySelector('.burger-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+
     if (header.classList.contains('header--active')) {
         header.classList.remove('header--active');
         document.body.style.overflow = 'visible';
@@ -25,8 +27,6 @@ document.querySelector('.burger-btn').addEventListener('click', function() {
 });
 
 window.addEventListener('click', (e) => {
-    e.preventDefault();
-
     if (!e.target.closest('.menu__list') && !e.target.closest('.burger-btn')) {
         header.classList.remove('header--active');
         document.body.style.overflow = 'visible';

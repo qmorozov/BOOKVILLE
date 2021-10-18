@@ -1,0 +1,37 @@
+// === REQUEST ===
+.request {
+    background-color: $light-300;
+
+    &-inner {
+        padding: 41px 0 48px 0;
+    }
+
+    &-info {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        font-size: $fs-s;
+        font-weight: $fw-light;
+        line-height: $lh-m;
+        color: $dark-50;
+    }
+
+    &-form {
+        display: flex;
+
+        &__item {
+            width: 33.3%;
+
+            & + & {
+                margin-left: 14px;
+            }
+        }
+    }
+}
+// === / REQUEST ===
