@@ -1,6 +1,7 @@
 // === HEADER ===
 
 .header {
+    z-index: 9999;
     background-color: $light-50;
 }
 
@@ -94,6 +95,7 @@
     top: -100%;
     right: 0;
     left: 0;
+    z-index: 9999;
     padding: 20px 0;
     background-color: rgba(#e5e5e5, .8);
     transition: $transition;
@@ -388,6 +390,7 @@
     width: 974px;
     height: 462px;
     padding: 20px 73px 30px 43px;
+    background-color: $light-50;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(71, 71, 71, 0.1);
     opacity: 0;

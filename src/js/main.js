@@ -104,3 +104,22 @@ document.querySelectorAll('.dropdown-item__title').forEach(function(item) {
 document.querySelectorAll('.dropdown-item').forEach(function(item) {
     if (item.children.length < 2)   item.classList.add('dropdown-item-one');
 });
+
+// === INTRO SLIDER ===
+
+const introSlider = new Swiper(".intro-slider", {
+    slideClass: 'intro-item',
+    wrapperClass: 'intro-items',
+    speed: 1000,
+    loop: true,
+    autoplay: true,
+    autoplay: {
+        delay: 7000,
+    },
+    grabCursor: true,
+    effect: "fade",
+    navigation: {
+      nextEl: ".intro-slider-next",
+      prevEl: ".intro-slider-prev",
+    },
+  });
