@@ -1,0 +1,47 @@
+// === SERVICE ===
+.service {
+    padding: 38px 0;
+
+    &-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.service__item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+    &-number {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 58px;
+        max-width: 58px;
+        height: 58px;
+        margin-right: 19px;
+        font-size: 30px;
+        font-weight: $fw-light;
+        line-height: 37px;
+        color: $dark-450;
+        user-select: none;
+        border: 0.5px solid $dark-450;
+        border-radius: 100%;
+
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            z-index: -1;
+            width: 58px;
+            height: 58px;
+            content: "";
+            background-color: $light-250;
+            border-radius: 100%;
+        }
+    }
+}
+// === / SERVICE ===
