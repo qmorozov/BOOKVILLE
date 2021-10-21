@@ -408,6 +408,46 @@
     }
 }
 
+@media (max-width: 600px) {
+    // === ABOUT ====
+    .about {
+        padding: 21px 0;
+        text-align: center;
+
+        &__pretitle {
+            margin-bottom: 18px;
+            font-size: $fs-xs;
+            line-height: $lh-s;
+        }
+
+        &__title {
+            margin-bottom: 14px;
+            font-size: $fs-s;
+            line-height: $lh-m;
+            text-align: center;
+        }
+
+        &-info {
+            justify-content: unset;
+            padding-bottom: 31px;
+
+            &__text {
+                flex-shrink: 0;
+                font-size: $fs-xxs;
+                line-height: 19px;
+
+                & + & {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            display: block;
+        }
+    }
+}
+
 @media (max-width: 500px) {
     // === HEADER ===
     .search-form {

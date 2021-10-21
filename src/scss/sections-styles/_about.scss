@@ -1,0 +1,57 @@
+// === ABOUT ===
+
+.about {
+    padding: 50px 0;
+    margin-bottom: 9px;
+    background-color: $light-100;
+    border-radius: 5px;
+
+    &__pretitle {
+        font-size: $fs-s;
+        font-weight: $fw-semibold;
+        line-height: $lh-m;
+        color: $dark-450;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        text-align: left;
+    }
+
+    &-slider {
+        position: relative;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-around;
+
+        &__text {
+            width: 41%;
+            font-size: $fs-xs;
+            font-weight: 200;
+            line-height: $lh-s;
+            color: $dark-50;
+
+            & + & {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+        display: none;
+
+        &-bullet {
+            background-color: #a5a5a5;
+
+            &-active {
+                background: $dark-450;
+            }
+        }
+    }
+}
+
+// === / ABOUT ===

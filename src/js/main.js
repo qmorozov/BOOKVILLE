@@ -14,7 +14,7 @@ window.onscroll = function showHeader() {
 
 const header = document.querySelector('.header');
 
-document.querySelector('.burger-btn').addEventListener('click', function(e) {
+document.querySelector('.burger-btn').addEventListener('click', function (e) {
     e.preventDefault();
 
     if (header.classList.contains('header--active')) {
@@ -56,7 +56,7 @@ document.querySelectorAll('.card__buy-btn').forEach(function (item) {
 
 const searchForm = document.querySelector('.search');
 
-document.querySelectorAll('.search-button').forEach(function(item) {
+document.querySelectorAll('.search-button').forEach(function (item) {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         searchForm.classList.toggle('search--active');
@@ -94,20 +94,20 @@ window.addEventListener('click', (e) => {
 
 // === SHOW DROPDOWN MENU ===
 
-document.querySelectorAll('.dropdown-item__title').forEach(function(item) {
-    item.addEventListener('click', function(event) {
+document.querySelectorAll('.dropdown-item__title').forEach(function (item) {
+    item.addEventListener('click', function (event) {
         event.preventDefault();
         item.parentNode.classList.toggle('dropdown-item--active');
     });
 });
-        
-document.querySelectorAll('.dropdown-item').forEach(function(item) {
-    if (item.children.length < 2)   item.classList.add('dropdown-item-one');
+
+document.querySelectorAll('.dropdown-item').forEach(function (item) {
+    if (item.children.length < 2) item.classList.add('dropdown-item-one');
 });
 
 // === INTRO SLIDER ===
 
-const introSlider = new Swiper(".intro-slider", {
+let introSlider = new Swiper(".intro-slider", {
     slideClass: 'intro-item',
     wrapperClass: 'intro-items',
     speed: 1000,
@@ -119,7 +119,42 @@ const introSlider = new Swiper(".intro-slider", {
     grabCursor: true,
     effect: "fade",
     navigation: {
-      nextEl: ".intro-slider-next",
-      prevEl: ".intro-slider-prev",
+        nextEl: ".intro-slider-next",
+        prevEl: ".intro-slider-prev",
     },
-  });
+});
+
+// === SLIDER ABOUT ===
+
+const aboutContainer = document.querySelector('.about-slider');
+
+let about;
+
+function mobileSlider() {
+    if (window.innerWidth <= 600 && aboutContainer.dataset.mobile === 'false') {
+        about = new Swiper(aboutContainer, {
+            slideClass: 'about-info__text',
+            wrapperClass: 'about-info',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        aboutContainer.dataset.mobile = 'true';
+    };
+
+    if (window.innerWidth > 600) {
+        aboutContainer.dataset.mobile = 'false';
+        if (aboutContainer.classList.contains('swiper-container-initialized')) {
+            about.destroy()
+        };
+    };
+};
+
+window.addEventListener('resize', () => {
+    mobileSlider();
+})
+
+mobileSlider();
