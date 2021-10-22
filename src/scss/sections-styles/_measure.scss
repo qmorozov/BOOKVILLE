@@ -1,0 +1,37 @@
+// === MEASURE ===
+.measure {
+    padding-top: 87px;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.measure-img img {
+    width: 100%;
+    max-width: 525px;
+    height: 100%;
+    max-height: 325px;
+    border-radius: 5px;
+}
+
+.measure-info {
+    width: 607px;
+    padding-left: 20px;
+
+    &__title {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    &__text {
+        margin-bottom: 23px;
+        font-size: $fs-xs;
+        font-weight: $fw-ExtraLight;
+        line-height: $lh-s;
+        color: $dark-50;
+    }
+}
+// === / MEASURE ===

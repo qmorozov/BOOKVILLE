@@ -241,6 +241,41 @@ body {
             background-color: lighten($dark-450, 5);
         }
     }
+
+    // === btn with arrow ===
+
+    &--arrow {
+        display: inline-block;
+        padding: 21px 45px;
+        // min-width: 230px;
+        text-align: center;
+        border: 1px solid $dark-450;
+        border-radius: 8px;
+
+        .btn__text {
+            position: relative;
+            padding-right: 33px;
+            color: $dark-450;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                width: 14px;
+                height: 8px;
+                content: "";
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 8'%3e%3cpath fill='%23887569' d='M0 4c0 .245.22.444.492.444h11.844L9.233 7.245a.421.421 0 0 0-.143.313c0 .113.049.227.143.312a.53.53 0 0 0 .695 0l3.935-3.557a.427.427 0 0 0 0-.628L9.925.13a.53.53 0 0 0-.695 0 .415.415 0 0 0 0 .628l3.1 2.8H.49C.217 3.556 0 3.755 0 4Z'/%3e%3c/svg%3e ");
+                transition: $transition;
+                transform: translateY(-50%);
+            }
+        }
+
+        &:hover {
+            .btn__text::after {
+                right: -5%;
+            }
+        }
+    }
 }
 
 @media (max-width: 500px) {

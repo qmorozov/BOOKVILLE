@@ -10,6 +10,15 @@
 }
 
 @font-face {
+    // === EXTRALIGHT ===
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-ExtraLight.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+}
+
+@font-face {
     // === LIGHT ===
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('../fonts/Roboto/Montserrat-Light.woff') format('woff');

@@ -43,6 +43,11 @@
             margin-left: 10px;
         }
     }
+
+    // === MEASURE ===
+    .measure-img img {
+        max-width: 425px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -69,6 +74,27 @@
     .footer__logo .logo__img {
         width: 120px;
         height: 65px;
+    }
+
+    // === MEASURE ===
+    .measure {
+        padding-top: 35px;
+
+        .title {
+            font-size: $fs-l;
+            line-height: $lh-xl;
+        }
+
+        &-img img {
+            max-width: 400px;
+            max-height: 275px;
+        }
+
+        &-info__text {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
 }
 
@@ -196,6 +222,28 @@
                     height: 48px;
                 }
             }
+        }
+    }
+
+    // === MEASURE ===
+    .measure {
+        &-inner {
+            flex-direction: column;
+        }
+
+        &-info {
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
+
+            &__title {
+                text-align: center;
+            }
+        }
+
+        &-img {
+            order: 1;
+            margin-top: 19px;
         }
     }
 }
@@ -469,6 +517,7 @@
             }
         }
     }
+
     // === SERVICE ===
     .service {
         &-inner {
@@ -490,6 +539,24 @@
                     width: 43px;
                     height: 43px;
                 }
+            }
+        }
+    }
+
+    // === MEASURE ===
+    .measure {
+        padding-top: 22px;
+
+        .title {
+            margin-bottom: 14px;
+            font-size: $fs-s;
+            line-height: $lh-m;
+        }
+
+        &-info {
+            &__text {
+                font-size: $fs-xxs;
+                line-height: 14px;
             }
         }
     }
