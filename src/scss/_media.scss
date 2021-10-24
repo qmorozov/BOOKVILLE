@@ -22,6 +22,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .selection__item {
+        width: 340px;
+    }
+}
+
 @media (max-width: 1150px) {
     // === HEADER ===
     .header-social {
@@ -54,6 +60,21 @@
     .measure-img img {
         max-width: 425px;
     }
+
+    // === SELECTION ===
+    .selection {
+        &-items {
+            justify-content: space-around;
+        }
+
+        &__item {
+            margin-right: 6px;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -84,7 +105,7 @@
 
     // === MEASURE ===
     .measure {
-        padding-top: 35px;
+        padding: 35px 0;
 
         .title {
             font-size: $fs-l;
@@ -250,6 +271,28 @@
         &-img {
             order: 1;
             margin-top: 19px;
+        }
+    }
+
+    // === SELECTION ===
+    .selection {
+        &__item {
+            width: 270px;
+
+            &-top {
+                padding: 11px 17px;
+            }
+
+            &-title {
+                margin-bottom: 5px;
+                font-size: $fs-m;
+                line-height: $lh-l;
+            }
+
+            &-subtitle {
+                font-size: $fs-xs;
+                line-height: $lh-s;
+            }
         }
     }
 }
@@ -521,6 +564,39 @@
             display: block;
         }
     }
+
+    // === SELECTION ===
+    .selection {
+        margin-bottom: 21px;
+
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__item {
+            width: 143px;
+
+            &:not(:nth-child(-n+2)) {
+                margin-top: 10px;
+            }
+
+            &-top {
+                padding: 5px 8px;
+            }
+
+            &-title {
+                margin-bottom: 4px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &-subtitle {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
 }
 
 @media (max-width: 500px) {
@@ -572,7 +648,7 @@
 
     // === MEASURE ===
     .measure {
-        padding-top: 22px;
+        padding: 22px 0;
 
         .title {
             margin-bottom: 14px;

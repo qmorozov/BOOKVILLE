@@ -1,0 +1,94 @@
+// === MAIN GOODS SLIDER ===
+
+.main-goods {
+    padding-top: 62px;
+
+    &.popular {
+        padding-top: 42px;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__slider {
+        overflow: hidden;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 60%;
+        width: 33px;
+        height: 33px;
+        border: 1px solid $dark-450;
+        border-radius: 100%;
+        transition: $transition;
+
+        &::after {
+            position: absolute;
+            width: 8px;
+            height: 14px;
+            content: "";
+        }
+    }
+
+    .swiper-button-next {
+        right: -16px;
+
+        &::after {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 8 14'%3e%3cpath fill='%23897668' d='M6.47 6.997.386 13.08a.539.539 0 0 0 .762.761l6.465-6.464a.539.539 0 0 0 0-.762L1.148.15a.539.539 0 0 0-.762.762L6.47 6.997Z'/%3e%3c/svg%3e ");
+        }
+    }
+
+    .swiper-button-prev {
+        left: -16px;
+
+        &::after {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 8 14'%3e%3cpath fill='%23897668' d='M1.53 7.003 7.612.92A.539.539 0 0 0 6.85.159L.387 6.622a.539.539 0 0 0 0 .762L6.85 13.85a.539.539 0 0 0 .762-.762L1.53 7.003Z'/%3e%3c/svg%3e ");
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .main-goods__item {
+        flex-shrink: 0;
+    }
+
+    &__show-all {
+        position: relative;
+        display: none;
+        width: max-content;
+        padding-right: 7px;
+        margin: 16px auto 0;
+        font-size: 12px;
+        line-height: 15px;
+        color: $dark-250;
+        text-align: center;
+
+        &::after {
+            position: absolute;
+            top: 55%;
+            right: 0;
+            width: 4px;
+            height: 6px;
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 2 4'%3e%3cpath fill='%23675B56' d='M1.655 2 .042.264a.162.162 0 0 1 0-.218.136.136 0 0 1 .202 0l1.714 1.847a.162.162 0 0 1 0 .218L.244 3.957a.136.136 0 0 1-.202-.004.163.163 0 0 1 0-.214l1.613-1.738Z'/%3e%3c/svg%3e ");
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// === / MAIN GOODS SLIDER ===

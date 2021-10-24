@@ -1,0 +1,59 @@
+// === SELECTION ===
+
+.selection {
+    margin-bottom: 53px;
+
+    &__title {
+        margin-bottom: 29px;
+    }
+}
+
+.selection-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.selection__item {
+    width: 381px;
+    height: fit-content;
+    background: $light-50;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba($dark-50, 0.1);
+    transition: $transition;
+
+    &:not(:nth-child(-n+3)) {
+        margin-top: 19px;
+    }
+
+    &-top {
+        padding: 20px 27px;
+        font-weight: $fw-medium;
+    }
+
+    &-title {
+        margin-bottom: 12px;
+        font-size: $fs-l;
+        line-height: $lh-xl;
+        color: $dark-100;
+    }
+
+    &-subtitle {
+        font-size: $fs-s;
+        line-height: $lh-m;
+        color: $dark-600;
+    }
+
+    &-img {
+        width: 100%;
+        max-width: 381px;
+        height: 100%;
+        max-height: 206px;
+        border-radius: 5px;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+// === / SELECTION ===
