@@ -14,6 +14,12 @@
         width: 93%;
         margin: 0 auto;
     }
+
+    // === MAIN GOODS ===
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -457,6 +463,11 @@
 }
 
 @media (max-width: 600px) {
+    // === GLOBAL ===
+    .container {
+        padding: 0 10px;
+    }
+
     // === ABOUT ====
     .about {
         padding: 21px 0;
@@ -491,6 +502,22 @@
         }
 
         .swiper-pagination {
+            display: block;
+        }
+    }
+
+    // === MAON GOODS ===
+    .main-goods {
+        &__title.title {
+            font-size: $fs-l;
+            line-height: $lh-xl;
+        }
+
+        &__wrapper {
+            padding-top: 19px;
+        }
+
+        &__show-all {
             display: block;
         }
     }
@@ -558,6 +585,22 @@
                 font-size: $fs-xxs;
                 line-height: 14px;
             }
+        }
+    }
+
+    // === MAON GOODS ===
+    .main-goods {
+        &.popular {
+            padding-top: 25px;
+        }
+
+        &__title.title {
+            font-size: $fs-s;
+            line-height: $lh-m;
+        }
+
+        &__wrapper {
+            padding-top: 19px;
         }
     }
 }

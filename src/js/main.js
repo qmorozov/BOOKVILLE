@@ -158,3 +158,42 @@ window.addEventListener('resize', () => {
 })
 
 mobileSlider();
+
+// === MAIN GOODS SLIDER ===
+
+let mainGoods = new Swiper(".main-goods__slider", {
+    slideClass: 'main-goods__item',
+    wrapperClass: 'main-goods__wrapper',
+    speed: 900,
+    autoplay: {
+        delay: 3000,
+      },
+    spaceBetween: 28,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    initialSlide: 1,
+    breakpoints: {
+        1150: {
+            spaceBetween: 28,
+            slidesPerView: 4,
+        },
+        
+        1000: {
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+        },
+        
+        500: {
+            spaceBetween: 10,
+            slidesPerView: 'auto',
+        },
+        
+        0: {
+            spaceBetween: 5,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+        }
+    }
+});
