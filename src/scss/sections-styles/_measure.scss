@@ -10,11 +10,8 @@
 }
 
 .measure-img img {
-    width: 100%;
-    max-width: 525px;
-    height: 100%;
-    max-height: 325px;
     border-radius: 5px;
+    @include img(525px, 325px);
 }
 
 .measure-info {

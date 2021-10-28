@@ -7,6 +7,13 @@
     font-weight: $weight;
 }
 
+@mixin img ($width, $height) {
+    width: 100%;
+    max-width: $width;
+    height: 100%;
+    max-height: $height;
+}
+
 // === FONT-WEIGHT ===
 
 $fw-thin: 100;

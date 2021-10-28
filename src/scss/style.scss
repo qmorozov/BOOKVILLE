@@ -22,9 +22,9 @@
 
 @import "sections-styles/service";
 
-// === ABOUT ===
+// === ABOUT-SECTION ===
 
-@import "sections-styles/about";
+@import "sections-styles/about-section";
 
 // === MEASURE ===
 
@@ -37,5 +37,48 @@
 // === SELECTION ===
 
 @import "sections-styles/selection";
+
+// === ABOUT PAGE ===
+
+.about {
+    &__title {
+        text-align: left;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    &__text + &__text {
+        margin-top: 21px;
+    }
+
+    &__img {
+        margin-left: 30px;
+        @include img(446px, 446px);
+    }
+
+    &__quote {
+        margin-bottom: 51px;
+        text-align: center;
+    }
+
+    &__gallery {
+        display: flex;
+        margin-bottom: 27px;
+
+        &-img {
+            img {
+                @include img(593px, 396px);
+            }
+
+            & + & {
+                margin-left: 11px;
+            }
+        }
+    }
+}
 
 @import "media";

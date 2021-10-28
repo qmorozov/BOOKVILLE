@@ -45,11 +45,8 @@
     }
 
     &-img {
-        width: 100%;
-        max-width: 381px;
-        height: 100%;
-        max-height: 206px;
         border-radius: 5px;
+        @include img(381px, 206px);
     }
 
     &:hover {

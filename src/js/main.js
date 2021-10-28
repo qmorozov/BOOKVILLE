@@ -126,38 +126,40 @@ let introSlider = new Swiper(".intro-slider", {
 
 // === SLIDER ABOUT ===
 
-const aboutContainer = document.querySelector('.about-slider');
+const aboutContainer = document.querySelector('.about-section-slider');
 
-let about;
+if (aboutContainer) {
+    let about;
 
-function mobileSlider() {
-    if (window.innerWidth <= 600 && aboutContainer.dataset.mobile === 'false') {
-        about = new Swiper(aboutContainer, {
-            slideClass: 'about-info__text',
-            wrapperClass: 'about-info',
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
+    function mobileSlider() {
+        if (window.innerWidth <= 600 && aboutContainer.dataset.mobile === 'false') {
+            about = new Swiper(aboutContainer, {
+                slideClass: 'about-section-info__text',
+                wrapperClass: 'about-section-info',
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
 
-        aboutContainer.dataset.mobile = 'true';
-    };
+            aboutContainer.dataset.mobile = 'true';
+        };
 
-    if (window.innerWidth > 600) {
-        aboutContainer.dataset.mobile = 'false';
-        if (aboutContainer.classList.contains('swiper-container-initialized')) {
-            about.destroy()
+        if (window.innerWidth > 600) {
+            aboutContainer.dataset.mobile = 'false';
+            if (aboutContainer.classList.contains('swiper-container-initialized')) {
+                about.destroy()
+            };
         };
     };
-};
 
-window.addEventListener('resize', () => {
+    window.addEventListener('resize', () => {
+        mobileSlider();
+    })
+
     mobileSlider();
-})
-
-mobileSlider();
+};
 
 // === MAIN GOODS SLIDER ===
 
@@ -167,7 +169,7 @@ let mainGoods = new Swiper(".main-goods__slider", {
     speed: 900,
     autoplay: {
         delay: 3000,
-      },
+    },
     spaceBetween: 28,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -179,17 +181,17 @@ let mainGoods = new Swiper(".main-goods__slider", {
             spaceBetween: 28,
             slidesPerView: 4,
         },
-        
+
         1000: {
             spaceBetween: 20,
             slidesPerView: 'auto',
         },
-        
+
         500: {
             spaceBetween: 10,
             slidesPerView: 'auto',
         },
-        
+
         0: {
             spaceBetween: 5,
             slidesPerView: 'auto',

@@ -370,9 +370,8 @@ body {
     }
 
     &__img {
-        width: 219px;
-        height: 285px;
         margin: 0 auto 9px;
+        @include img(219px, 285px);
     }
 
     &__author {
@@ -595,17 +594,20 @@ body {
 // === TEXT ===
 
 .text {
-    font-size: $fs-xxs;
+    font-size: $fs-xs;
     font-weight: $fw-light;
-    line-height: $lh-s;
-    color: $dark-50;
+    line-height: $lh-l;
+    color: #525252;
 }
 
 // === BREADCRUMBS ===
 
 .breadcrumbs {
+    margin: 42px 0 35px 0;
+
     &__list {
         display: flex;
+        align-items: flex-start;
 
         &-item {
             position: relative;

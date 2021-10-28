@@ -123,6 +123,17 @@
             line-height: 18px;
         }
     }
+
+    // === ABOUT ===
+    .about {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            @include img(390px, 380px);
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -197,6 +208,33 @@
         &::before {
             width: 48px;
             height: 48px;
+        }
+    }
+
+    // === ABOUT ===
+    .about {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__img {
+            margin-top: 20px;
+            margin-left: 0;
+            @include img(446px, 446px);
+        }
+
+        &__quote {
+            margin-bottom: 24px;
+        }
+
+        &__gallery {
+            flex-direction: column;
+            align-items: center;
+
+            &-img + &-img {
+                margin-top: 15px;
+                margin-left: 0;
+            }
         }
     }
 }
@@ -294,6 +332,13 @@
                 line-height: $lh-s;
             }
         }
+    }
+}
+
+@media (max-width: 700px) {
+    // === GLOBAL ===
+    .breadcrumbs {
+        margin: 25px 0 25px;
     }
 }
 
@@ -503,6 +548,25 @@
     .intro-slider-prev::before {
         left: -5px;
     }
+
+    // === ABOUT ===
+    .about {
+        &__title {
+            margin-bottom: 17px;
+        }
+
+        &__img {
+            margin-top: 13px;
+        }
+
+        &__text + &__text {
+            margin-top: 11px;
+        }
+
+        &__gallery {
+            margin-bottom: 23px;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -512,7 +576,7 @@
     }
 
     // === ABOUT ====
-    .about {
+    .about-section {
         padding: 21px 0;
         text-align: center;
 
@@ -600,6 +664,16 @@
 }
 
 @media (max-width: 500px) {
+    // === GLOBAL ===
+    .title {
+        font-size: $fs-s;
+        line-height: $lh-m;
+    }
+
+    .breadcrumbs {
+        margin: 20px 0 20px;
+    }
+
     // === HEADER ===
     .search-form {
         &__input {
@@ -682,6 +756,11 @@
 }
 
 @media (max-width: 450px) {
+    // === GLOBAL ===
+    .text {
+        font-size: $fs-xxs;
+        line-height: $lh-s;
+    }
     // === HEADER ===
     .header__item {
         &--wish,
@@ -715,6 +794,8 @@
             white-space: nowrap;
         }
     }
+
+    // === ABOUT ===
 }
 
 @media (max-width: 400px) {
