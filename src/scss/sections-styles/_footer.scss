@@ -2,7 +2,7 @@
 .footer {
     background-color: $light-150;
 
-    &-inner {
+    &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -11,12 +11,12 @@
     }
 }
 
-.footer-menu {
-    &__list {
+.footer__menu {
+    &-list {
         display: flex;
     }
 
-    &__item {
+    &-item {
         font-size: $fs-s;
         line-height: $lh-m;
         color: $dark-350;

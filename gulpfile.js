@@ -20,6 +20,7 @@ const htmlminify = require("gulp-html-minify");
 const gulpStylelint = require('gulp-stylelint');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
+const webp = require('gulp-webp');
 
 // === FONTS from TTF to WOFF / WOFF2 ===
 const fonts = () => {
@@ -75,7 +76,7 @@ const styleLibs = () => {
 // === PLUG IN LIBS JS ===
 const scriptLibs = () => {
     return src([
-        // 'node_modules/lazysizes/lazysizes.min.js',
+        'node_modules/lazysizes/lazysizes.min.js',
         // 'node_modules/mixitup/dist/mixitup.min.js',
         // 'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',
         // 'node_modules/fslightbox/index.js',
@@ -103,6 +104,8 @@ const htmlInclude = () => {
 // === MOVE PHOTOS TO THE APP FOLDER ===
 const imgToApp = () => {
     return src('./src/images/*/**.*')
+        // === IMG TO WEBP ===
+        .pipe(webp())
         .pipe(dest('./app/images'))
 }
 

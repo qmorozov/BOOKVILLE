@@ -19,19 +19,17 @@
         text-align: left;
     }
 
-    &-slider {
+    &__slider {
         position: relative;
     }
 
-    &-info {
+    &__info {
         display: flex;
         justify-content: space-around;
 
-        &__text {
+        &-text {
             width: 41%;
-            font-size: $fs-xs;
             font-weight: 200;
-            line-height: $lh-s;
             color: $dark-50;
 
             & + & {

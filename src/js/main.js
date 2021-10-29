@@ -107,9 +107,9 @@ document.querySelectorAll('.dropdown-item').forEach(function (item) {
 
 // === INTRO SLIDER ===
 
-let introSlider = new Swiper(".intro-slider", {
-    slideClass: 'intro-item',
-    wrapperClass: 'intro-items',
+let introSlider = new Swiper(".intro__slider", {
+    slideClass: 'intro__item',
+    wrapperClass: 'intro__items',
     speed: 1000,
     loop: true,
     autoplay: true,
@@ -119,14 +119,14 @@ let introSlider = new Swiper(".intro-slider", {
     grabCursor: true,
     effect: "fade",
     navigation: {
-        nextEl: ".intro-slider-next",
-        prevEl: ".intro-slider-prev",
+        nextEl: ".intro__slider-next",
+        prevEl: ".intro__slider-prev",
     },
 });
 
 // === SLIDER ABOUT ===
 
-const aboutContainer = document.querySelector('.about-section-slider');
+const aboutContainer = document.querySelector('.about-section__slider');
 
 if (aboutContainer) {
     let about;
@@ -134,8 +134,8 @@ if (aboutContainer) {
     function mobileSlider() {
         if (window.innerWidth <= 600 && aboutContainer.dataset.mobile === 'false') {
             about = new Swiper(aboutContainer, {
-                slideClass: 'about-section-info__text',
-                wrapperClass: 'about-section-info',
+                slideClass: 'about-section__info-text',
+                wrapperClass: 'about-section__info',
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {

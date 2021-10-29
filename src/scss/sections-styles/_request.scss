@@ -2,11 +2,11 @@
 .request {
     background-color: $light-300;
 
-    &-inner {
+    &__inner {
         padding: 41px 0 48px 0;
     }
 
-    &-info {
+    &__info {
         margin-bottom: 38px;
         text-align: center;
     }
@@ -22,10 +22,10 @@
         color: $dark-50;
     }
 
-    &-form {
+    &__form {
         display: flex;
 
-        &__item {
+        &-item {
             width: 33.3%;
 
             & + & {

@@ -1,0 +1,32 @@
+// === EVENTS - SECTION ===
+.events-section {
+    padding: 87px 0 68px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.events-section__img img {
+    border-radius: 5px;
+    @include img(525px, 325px);
+}
+
+.events-section__info {
+    width: 607px;
+    padding-left: 20px;
+
+    &-title {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    &-text {
+        margin-bottom: 23px;
+        font-weight: $fw-ExtraLight;
+        color: $dark-50;
+    }
+}
+// === / EVENTS - SECTION ===

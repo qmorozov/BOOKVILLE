@@ -104,7 +104,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    // padding-top: 70px;
     overflow: hidden;
 }
 
@@ -294,8 +293,6 @@ body {
 .input {
     width: 100%;
     padding: 21px 29px;
-    font-size: $fs-xs;
-    line-height: $lh-s;
     color: #9f9f9f;
     background-color: $light-50;
     border: 1px solid #959595;
@@ -594,7 +591,6 @@ body {
 // === TEXT ===
 
 .text {
-    font-size: $fs-xs;
     font-weight: $fw-light;
     line-height: $lh-l;
     color: #525252;
@@ -613,8 +609,6 @@ body {
             position: relative;
             padding-right: 23px;
             margin-right: 20px;
-            font-size: $fs-xs;
-            line-height: $lh-s;
             color: #a7a7a7;
 
             a {
