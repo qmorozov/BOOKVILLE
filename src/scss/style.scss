@@ -129,4 +129,25 @@
     }
 }
 
+// === CHOSEN ===
+
+.chosen {
+    margin-bottom: 29px;
+
+    &__title {
+        margin-bottom: 21px;
+        text-align: left;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin: 5px 5px 20px 5px;
+    }
+}
+
 @import "media";

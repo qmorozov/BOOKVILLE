@@ -27,6 +27,11 @@
     .selection__item {
         width: 340px;
     }
+
+    // === CHOSEN ===
+    .chosen__items {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -614,7 +619,16 @@
 
     // === SALES ===
     .sales__item {
-        margin: 0px 0px 40px;
+        margin: 0 0 40px;
+    }
+
+    // === CHOSEN ===
+    .chosen {
+        margin-bottom: 20px;
+
+        &__item {
+            margin: 0 0 20px 0;
+        }
     }
 }
 
