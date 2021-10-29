@@ -110,4 +110,23 @@
     }
 }
 
+// === SALES ===
+
+.sales {
+    &__title {
+        margin-bottom: 53px;
+        text-align: left;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin: 5px 5px 40px 5px;
+    }
+}
+
 @import "media";

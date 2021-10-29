@@ -257,6 +257,11 @@
             }
         }
     }
+
+    // === SALES ===
+    .sales__items {
+        justify-content: space-evenly;
+    }
 }
 
 @media (max-width: 800px) {
@@ -373,6 +378,11 @@
         &__img + &__img {
             margin-top: 20px;
         }
+    }
+
+    // === SALES ===
+    .sales__title {
+        margin-bottom: 25px;
     }
 }
 
@@ -601,6 +611,11 @@
             margin-bottom: 23px;
         }
     }
+
+    // === SALES ===
+    .sales__item {
+        margin: 0px 0px 40px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -827,7 +842,9 @@
         }
     }
 
-    // === ABOUT ===
+    .sales__item {
+        margin: 0 0 20px 0;
+    }
 }
 
 @media (max-width: 400px) {
