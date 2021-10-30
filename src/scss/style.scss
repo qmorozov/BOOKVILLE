@@ -57,6 +57,7 @@
 
     &__img {
         margin-left: 30px;
+        border-radius: 5px;
         @include img(446px, 446px);
     }
 
@@ -71,6 +72,7 @@
 
         &-img {
             img {
+                border-radius: 5px;
                 @include img(593px, 396px);
             }
 
@@ -101,6 +103,7 @@
         margin-left: 14px;
 
         img {
+            border-radius: 5px;
             @include img(312px, 312px);
         }
     }
@@ -240,6 +243,78 @@
             background-color: $light-250;
             border-radius: 100%;
         }
+    }
+}
+
+// === BLOG - PAGE ===
+
+.blog {
+    margin-bottom: 32px;
+
+    &__title {
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 40px;
+    }
+}
+
+.blog__item {
+    width: 100%;
+    max-width: 387px;
+    transition: $transition;
+
+    &:nth-child(n + 4) {
+        margin-top: 50px;
+    }
+
+    &:nth-child(6n+6),
+    &:nth-child(7n+7) {
+        grid-row: span 2;
+
+        .blog__item-img {
+            height: 89%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    &-img img {
+        width: 387px;
+        border-radius: 5px;
+    }
+
+    &-info {
+        margin-top: 12px;
+    }
+
+    &-title {
+        margin-bottom: 12px;
+        font-size: $fs-xs;
+        line-height: $lh-s;
+        color: $dark-50;
+        @include Montserrat($weight: $fw-regular);
+    }
+
+    &-date {
+        font-size: $fs-xxs;
+        line-height: $lh-xs;
+        color: #8d8d8d;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
     }
 }
 
