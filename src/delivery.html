@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="#" aria-label="breadcrumbs">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>
+                                Доставка и оплата
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / BREADCRUMBS -->
+
+            <!-- DELIVERY -->
+            <section class="delivery">
+                <div class="container">
+                    <div class="delivery__inner">
+
+                        <h1 class="delivery__title title">
+                            Доставка и оплата
+                        </h1>
+
+                        <div class="delivery__info">
+                            <h2 class="delivery__subtitle">
+                                Как сделать заказ на сайте?
+                            </h2>
+                            <p class="delivery__text text">
+                                Процесс заказа очень прост: добавьте товары в корзину, выберите способ доставки и оплаты
+                                и подтвердите заказ. Чтобы добавить продукт в корзину, все, что вам нужно сделать, это
+                                нажать кнопку «Добавить в корзину» рядом с продуктом. Если вы хотите больше штук одного
+                                и того же продукта, перейдите в область корзины и отрегулируйте количество в
+                                соответствии с вашими предпочтениями.Когда у вас есть все желаемые продукты в корзине,
+                                нажмите кнопку в области корзины - «Заказать». Введите адрес доставки или выберите
+                                существующий адрес в своем аккаунте, выберите способ доставки и способ оплаты и нажмите
+                                кнопку завершения заказа - «Отправить заказ». На экране вашего браузера система
+                                отобразит: номер счета / заказа, сумму к оплате / оплате и список приобретенных товаров.
+                            </p>
+                        </div>
+
+                        <div class="delivery__content">
+
+                            <h2 class="delivery__subtitle">
+                                Есть несколько способов оплаты, в зависимости от ваших предпочтений. Таким образом, вы
+                                можете сделать выбор в пользу:
+                            </h2>
+
+                            <ul class="delivery__list">
+
+                                <li class="delivery__item">
+
+                                    <div class="delivery__point">
+                                        <div class="delivery__point-num">1</div>
+                                        <p class="delivery__point-text">
+                                            Оплата продукции наложенным платежом
+                                        </p>
+                                    </div>
+
+                                    <p class="delivery__text text">
+                                        (наличными), на основании накладной, сопровождающей посылку (доставка курьером),
+                                        способ доступен только в городе. Кишинев и его окрестности.
+                                    </p>
+                                </li>
+
+                                <li class="delivery__item">
+
+                                    <div class="delivery__point">
+                                        <div class="delivery__point-num">2</div>
+                                        <p class="delivery__point-text">
+                                            По перечислению
+                                        </p>
+                                    </div>
+
+                                    <p class="delivery__text text">
+                                        при оплате по перечислению, после оформления заказа юридическим лицам будет
+                                        выслан счет для оплаты. Для этого отправьте фискальные и банковские реквизиты
+                                        вашей компании на адрес электронной почты: <a href="mailto:office@bookville.md">office@bookville.md</a>.
+                                    </p>
+                                </li>
+
+                                <li class="delivery__item">
+
+                                    <div class="delivery__point">
+                                        <div class="delivery__point-num">3</div>
+                                        <p class="delivery__point-text">
+                                            Кредитная / дебетовая карта
+                                        </p>
+                                    </div>
+
+                                    <p class="delivery__text text">
+                                        если вы выбрали кредитную / дебетовую карту в качестве способа оплаты, вам
+                                        необходимо заполнить форму с подробными сведениями о ней. Если транзакция по
+                                        карте прошла успешно, следующий экран благодарит вас за заказ и предоставляет
+                                        вам соответствующую информацию о заказе. Вы также получите эту информацию по
+                                        электронной почте.
+                                        Оплата производится банковскими картами Visa и MasterCard.. Если вы выберете
+                                        этот способ оплаты, вы будете автоматически перенаправлены на безопасную
+                                        платежную страницу банка, где вам нужно будет ввести данные своей платежной
+                                        карты. За эти платежи дополнительная плата не взимается. Оплата производится в
+                                        леях по курсу банка, выпустившего карту, и основана на безопасной системе
+                                        обработки онлайн-платежей, которая обеспечивает конфиденциальность и
+                                        безопасность операций. Обработка данных карты осуществляется исключительно
+                                        банком, наш магазин не запрашивает и не хранит никакой информации о карте.
+                                    </p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="delivery__info">
+                            <h2 class="delivery__subtitle">
+                                Доставка по городам Кишинёв и Бэлць бесплатная, если стоимость заказа превышает 499 лей
+                            </h2>
+                            <p class="delivery__text text">
+                                Срок доставки 1-2 рабочих дня.
+                            </p>
+                        </div>
+
+                        <div class="delivery__info">
+                            <h2 class="delivery__subtitle">
+                                Национальная доставка :
+                            </h2>
+                            <p class="delivery__text text">
+                                Доставка на национальном уровне осуществляется в течение 1-3 рабочих дней с момента
+                                оформления заказа.
+                            </p>
+                        </div>
+
+                        <div class="delivery__info">
+                            <h2 class="delivery__subtitle">
+                                Международная доставка :
+                            </h2>
+                            <p class="delivery__text text">
+                                Стоимость международной доставки зависит от нескольких факторов, таких как вес, страна
+                                назначения и способ оплаты.
+                            </p>
+                            <p class="delivery__text text">
+                                *** Каждый заказ принимают менеджеры компании и вместе с вами устанавливают сроки
+                                доставки. Наши курьеры доставят заказ по адресу и в согласованные с вами сроки.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / DELIVERY -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+
+<!-- <a class="logo" href="#" aria-label="logo">
+    <img class="logo__img" src="images/content/logo.png" alt="logo">
+</a> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->
+
+
+<!-- <h2 class="title">Популярные товары</h2>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.
+        </p> -->
+
+<!-- <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Книги для детей
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        3-7 лет
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>
+                        К себе нежно
+                    </span>
+                </li>
+            </ul>
+        </div> -->
+
+
+<!-- <input type="text" class="input" placeholder="Ваше имя"> -->
+
+<!-- <a href="tel:79991400000" class="phone">+7 999 140 00 00</a> -->
+
+<!-- <button class="btn btn--transparent">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button>
+
+        <button class="btn btn--fill">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->
