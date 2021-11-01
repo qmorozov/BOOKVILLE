@@ -368,6 +368,7 @@ body {
 
     &__img {
         margin: 0 auto 9px;
+        border-radius: 5px;
         @include img(219px, 285px);
     }
 

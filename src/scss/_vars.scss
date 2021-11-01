@@ -8,6 +8,8 @@
 }
 
 @mixin img ($width, $height) {
+    // width: $width;
+    // height: $height;
     width: 100%;
     max-width: $width;
     height: 100%;

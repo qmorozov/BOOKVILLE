@@ -12,6 +12,7 @@
 
     .intro__item-img {
         width: 93%;
+        // height: auto;
         margin: 0 auto;
     }
 
@@ -47,16 +48,12 @@
                 margin-top: 50px;
             }
         }
+    }
 
-        .blog__item:nth-child(6n+6),
-        .blog__item:nth-child(7n+7) {
-            .blog__item-img {
-                height: auto;
-
-                img {
-                    height: auto;
-                }
-            }
+    .blog__item:nth-child(6n+6),
+    .blog__item:nth-child(7n+7) {
+        .blog__item-img {
+            height: 260px;
         }
     }
 }
@@ -191,6 +188,34 @@
     .delivery__content .delivery__text {
         margin-left: 10px;
     }
+
+    // === SINGLE - BLOG ===
+    .single-blog {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__gallery {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-item {
+                margin: 10px 10px 0;
+
+                & + & {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -275,9 +300,14 @@
         }
 
         &__img {
+            width: 100%;
             margin-top: 20px;
             margin-left: 0;
             @include img(446px, 446px);
+        }
+
+        &__info {
+            width: 100%;
         }
 
         &__quote {
@@ -453,6 +483,11 @@
             }
         }
     }
+    
+    // === SINGLE - BLOG ===
+    .single-blog__gallery-item {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 700px) {
@@ -478,6 +513,11 @@
     // === SALES ===
     .sales__title {
         margin-bottom: 25px;
+    }
+
+    // === SINGLE - BLOG ===
+    .single-blog__title {
+        margin-bottom: 17px;
     }
 }
 
@@ -814,6 +854,12 @@
             }
         }
     }
+
+    // === SINGLE - BLOG ===
+    .single-blog__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -821,6 +867,11 @@
     .title {
         font-size: $fs-s;
         line-height: $lh-m;
+    }
+
+    .text {
+        font-size: $fs-xxs;
+        line-height: $lh-s;
     }
 
     .breadcrumbs {
@@ -941,11 +992,6 @@
 }
 
 @media (max-width: 450px) {
-    // === GLOBAL ===
-    .text {
-        font-size: $fs-xxs;
-        line-height: $lh-s;
-    }
     // === HEADER ===
     .header__item {
         &--wish,
