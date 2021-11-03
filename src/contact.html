@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>
+                                Контакты
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / BREADCRUMBS -->
+
+            <!-- CONTACT -->
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+
+                        <h1 class="contact__title title">
+                            Контакты
+                        </h1>
+
+                        <div class="contact__content">
+
+                            <div class="contact__info">
+
+                                <address class="contact__address">
+                                    Shopping MallDova - Moldova, Chisinau, str. Arborilor 21
+                                </address>
+
+                                <a href="tel:79991400000" class="contact__phone phone">
+                                    +7 999 140 00 00
+                                </a>
+
+                                <a href="tel:79991400000" class="contact__phone phone">
+                                    +7 999 140 00 00
+                                </a>
+
+                                <a href="mailto:bookville@gmail.com" class="contact__email email">
+                                    bookville@gmail.com
+                                </a>
+
+                                <div class="contact__social">
+                                    <h2 class="contact__social-title">
+                                        Мы в соц. сетях
+                                    </h2>
+                                    <div class="contact__social-items social">
+                                        <a class="social__item" href="https://www.facebook.com/bookville.md/" aria-label="Social facebook" target="_blank">
+                                            <svg fill="none" viewBox="0 0 19 19">
+                                                <g>
+                                                    <path
+                                                        d="M10.783 18.963h-3.05a.924.924 0 0 1-.923-.922v-6.863H5.032a.924.924 0 0 1-.924-.921V7.316c0-.508.415-.922.924-.922H6.81V4.922c0-1.46.46-2.703 1.329-3.593.873-.894 2.093-1.366 3.528-1.366l2.325.004c.508 0 .921.414.921.921v2.73a.923.923 0 0 1-.923.922l-1.565.001c-.477 0-.599.095-.625.125-.043.048-.094.186-.094.565v1.163h2.167a.925.925 0 0 1 .932.922l-.001 2.94a.923.923 0 0 1-.924.922h-2.174v6.863a.924.924 0 0 1-.923.922Zm-2.856-1.114h2.663v-7.17c0-.339.277-.615.617-.615h2.48l.002-2.556h-2.483a.617.617 0 0 1-.616-.615V5.23c0-.435.044-.93.373-1.302.398-.45 1.025-.502 1.462-.502h1.372V1.08l-2.131-.003c-2.306 0-3.74 1.473-3.74 3.845v1.97c0 .34-.276.616-.616.616H5.224v2.556H7.31c.34 0 .617.276.617.616v7.169ZM13.99 1.081Z">
+                                                    </path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="a">
+                                                        <path fill="#fff" d="M0 0h19v19H0z"></path>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a class="social__item" href="https://www.instagram.com/bookville.md/?hl=ru" aria-label="Social instagram" target="_blank">
+                                            <svg fill="none" viewBox="0 0 19 19">
+                                                <path
+                                                    d="M13.857 0H5.143A5.149 5.149 0 0 0 0 5.143v8.714A5.149 5.149 0 0 0 5.143 19h8.714A5.149 5.149 0 0 0 19 13.857V5.143A5.149 5.149 0 0 0 13.857 0Zm4.03 13.857a4.034 4.034 0 0 1-4.03 4.03H5.143a4.034 4.034 0 0 1-4.03-4.03V5.143a4.034 4.034 0 0 1 4.03-4.03h8.714a4.034 4.034 0 0 1 4.03 4.03v8.714Z">
+                                                </path>
+                                                <path
+                                                    d="M9.5 4.305A5.201 5.201 0 0 0 4.305 9.5 5.201 5.201 0 0 0 9.5 14.695 5.201 5.201 0 0 0 14.695 9.5 5.201 5.201 0 0 0 9.5 4.305Zm0 9.276A4.086 4.086 0 0 1 5.419 9.5a4.086 4.086 0 0 1 4.08-4.081 4.086 4.086 0 0 1 4.082 4.08A4.086 4.086 0 0 1 9.5 13.581ZM14.82 2.46c-.847 0-1.536.688-1.536 1.535 0 .846.689 1.535 1.535 1.535.847 0 1.536-.689 1.536-1.535 0-.847-.69-1.535-1.536-1.535Zm0 1.956a.422.422 0 1 1 0-.844.422.422 0 0 1 0 .844Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="contact__map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9151.719174707032!2d28.83970240081373!3d47.00446028145105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ea01a3e6089%3A0x8b7bd74bc15dd0cf!2sShopping%20MallDova!5e0!3m2!1sru!2sua!4v1635930326198!5m2!1sru!2sua" style="border:0;" loading="lazy" height="321px" width="745px" allowfullscreen>
+                                </iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / CONTACT -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+
+<!-- <a class="logo" href="#" aria-label="logo">
+    <img class="logo__img" src="images/content/logo.webp" alt="logo">
+</a> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->
+
+
+<!-- <h2 class="title">Популярные товары</h2>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.
+        </p> -->
+
+<!-- <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Книги для детей
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        3-7 лет
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>
+                        К себе нежно
+                    </span>
+                </li>
+            </ul>
+        </div> -->
+
+
+<!-- <input type="text" class="input" placeholder="Ваше имя"> -->
+
+<!-- <a href="tel:79991400000" class="phone">+7 999 140 00 00</a> -->
+
+<!-- <button class="btn btn--transparent">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button>
+
+        <button class="btn btn--fill">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->

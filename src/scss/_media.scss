@@ -105,6 +105,11 @@
             }
         }
     }
+
+    // === CONTACT PAGE ===
+    .contact__map {
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -215,6 +220,11 @@
                 }
             }
         }
+    }
+
+    // === CONTACT PAGE ===
+    .contact__info {
+        max-width: 310px;
     }
 }
 
@@ -483,7 +493,7 @@
             }
         }
     }
-    
+
     // === SINGLE - BLOG ===
     .single-blog__gallery-item {
         margin: 10px 0;
@@ -518,6 +528,28 @@
     // === SINGLE - BLOG ===
     .single-blog__title {
         margin-bottom: 17px;
+    }
+
+    // === CONTACT PAGE ===
+    .contact {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__info {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__map {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
@@ -857,8 +889,8 @@
 
     // === SINGLE - BLOG ===
     .single-blog__title {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: $fs-s;
+        line-height: $lh-m;
     }
 }
 
@@ -1068,5 +1100,32 @@
         width: 300px;
         height: 500px;
         padding: 15px 15px;
+    }
+
+    // === CONTACT PAGE ===
+    .contact {
+        &__address,
+        &__phone,
+        &__email,
+        &__social-title {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__address {
+            margin-bottom: 19px;
+        }
+
+        &__phone + &__phone {
+            margin-top: 11px;
+        }
+
+        &__email {
+            margin-top: 17px;
+        }
+
+        &__social {
+            margin-top: 20px;
+        }
     }
 }
