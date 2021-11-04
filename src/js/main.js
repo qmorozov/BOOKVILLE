@@ -199,3 +199,42 @@ let mainGoods = new Swiper(".main-goods__slider", {
         }
     }
 });
+
+// === PRODUCT ONE ===
+
+let product = new Swiper(".product__gallery", {
+    slideClass: 'product__slide',
+    wrapperClass: 'product__slider',
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    speed: 900,
+    autoplay: {
+        delay: 5000,
+    },
+});
+
+document.querySelectorAll('.product__wish').forEach(function (item) {
+    item.addEventListener('click', function () {
+        item.classList.toggle('product__wish--selected');
+    })
+});
+
+// === SHOW MORE TEXT ===
+
+if (document.querySelector('.product__description-text')) {
+    const text = document.querySelectorAll('.product__description-text')
+
+    text.forEach(function(item) {
+        const dots = item.querySelector('.dots'),
+             btn = item.querySelector('.product__description-btn'),
+             moreText = item.querySelector('.show-more-text');
+    
+        btn.addEventListener('click', function() {
+            if (!item.classList.contains('show-text')) {
+                item.classList.add('show-text')
+            }
+        })
+    });
+};

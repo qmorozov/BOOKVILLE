@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                Книги для детей
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                3-7 лет
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>
+                                К себе нежно
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / BREADCRUMBS -->
+
+            <!-- PRODUCT -->
+            <section class="product">
+                <div class="container">
+                    <div class="product__inner">
+
+                        <div class="product__content">
+
+                            <div class="product__gallery">
+                                <div class="product__wish">
+                                    <span></span>
+                                </div>
+                                <div class="product__slider">
+                                    <div class="product__slide">
+                                        <img src="images/content/product-1.webp" alt="product-img">
+                                    </div>
+                                    <div class="product__slide">
+                                        <img src="images/content/product-1.webp" alt="product-img">
+                                    </div>
+                                    <div class="product__slide">
+                                        <img src="images/content/product-1.webp" alt="product-img">
+                                    </div>
+                                </div>
+                                <div class="product__arrow-next swiper-button-next"></div>
+                                <div class="product__arrow-prev swiper-button-prev"></div>
+                            </div>
+
+                            <div class="product__info">
+                                <h2 class="product__author">
+                                    Ольга Примаченко
+                                </h2>
+                                <h1 class="product__title">
+                                    К себе нежно
+                                </h1>
+                                <p class="product__status">
+                                    В наличии
+                                </p>
+                                <div class="product__order">
+                                    <span class="product__price">
+                                        790 ₽
+                                    </span>
+                                    <a class="product__btn btn btn--fill" href="#" aria-label="product to busket">
+                                        <span class="btn__text">
+                                            В КОРЗИНУ
+                                        </span>
+                                    </a>
+                                </div>
+                                <ul class="product__attributes">
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Издательство
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            Бомбора, 2020 г.
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Год публикации
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            2018
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Количество страниц 
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            248  
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Размер
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            21×36 
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Вес
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            350 гр 
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            Тип обложки 
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            Твёрдый переплёт  
+                                        </p>
+                                    </li>
+                                    <li class="product__attribute">
+                                        <p class="product__attribute-name">
+                                            ISBN
+                                        </p>
+                                        <p class="product__attribute-value">
+                                            34578532
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="product__description">
+                                    <p class="product__description-text text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret<span class="dots">...</span><span class="show-more-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus iure repellat, quidem in obcaecati quis corporis, ea repudiandae nesciunt sed, officia tempore earum saepe nam quaerat? Corporis nisi esse dolor?</span>
+                                        <button class="product__description-btn">
+                                            <span></span>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / PRODUCT -->
+
+                        <!-- GOODS SLIDER SIMILAR PRODUCTS -->
+            <section class="main-goods recommendation">
+                <div class="container">
+                    <div class="main-goods__inner">
+
+                        <h2 class="main-goods__title title">
+                            Похожие продукты
+                        </h2>
+
+                        <div class="main-goods__slider">
+                            <div class="main-goods__wrapper">
+
+                                <div class="card main-goods__item">
+                                    <a class="card-link" href="#" aria-label="product link">
+                                        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+                                        <span class="card__author">
+                                            Ольга Примаченко
+                                        </span>
+                                        <span class="card__title">
+                                            К себе нежно
+                                        </span>
+                                        <span class="card__price">
+                                            790
+                                        </span>
+                                    </a>
+                                    <button class="card__wish" type="button" aria-label="product wish"></button>
+                                    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+                                </div>
+
+                                <div class="card main-goods__item">
+                                    <a class="card-link" href="#" aria-label="product link">
+                                        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+                                        <span class="card__author">
+                                            Ольга Примаченко
+                                        </span>
+                                        <span class="card__title">
+                                            К себе нежно
+                                        </span>
+                                        <span class="card__price">
+                                            790
+                                        </span>
+                                    </a>
+                                    <button class="card__wish" type="button" aria-label="product wish"></button>
+                                    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+                                </div>
+
+                                <div class="card main-goods__item">
+                                    <a class="card-link" href="#" aria-label="product link">
+                                        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+                                        <span class="card__author">
+                                            Ольга Примаченко
+                                        </span>
+                                        <span class="card__title">
+                                            К себе нежно
+                                        </span>
+                                        <span class="card__price">
+                                            790
+                                        </span>
+                                    </a>
+                                    <button class="card__wish" type="button" aria-label="product wish"></button>
+                                    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+                                </div>
+
+                                <div class="card main-goods__item">
+                                    <a class="card-link" href="#" aria-label="product link">
+                                        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+                                        <span class="card__author">
+                                            Ольга Примаченко
+                                        </span>
+                                        <span class="card__title">
+                                            К себе нежно
+                                        </span>
+                                        <span class="card__price">
+                                            790
+                                        </span>
+                                    </a>
+                                    <button class="card__wish" type="button" aria-label="product wish"></button>
+                                    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+                                </div>
+
+                                <div class="card main-goods__item">
+                                    <a class="card-link" href="#" aria-label="product link">
+                                        <img class="card__img" src="images/content/card-img-1.webp" alt="card-img">
+                                        <span class="card__author">
+                                            Ольга Примаченко
+                                        </span>
+                                        <span class="card__title">
+                                            К себе нежно
+                                        </span>
+                                        <span class="card__price">
+                                            790
+                                        </span>
+                                    </a>
+                                    <button class="card__wish" type="button" aria-label="product wish"></button>
+                                    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                        <a class="main-goods__show-all" href="#" aria-label="show all">
+                            Смотреть все
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / GOODS SLIDER SIMILAR PRODUCTS -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+
+<!-- <a class="logo" href="#" aria-label="logo">
+    <img class="logo__img" src="images/content/logo.png" alt="logo">
+</a> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->
+
+
+<!-- <h2 class="title">Популярные товары</h2>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.
+        </p> -->
+
+<!-- <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Книги для детей
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        3-7 лет
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>
+                        К себе нежно
+                    </span>
+                </li>
+            </ul>
+        </div> -->
+
+
+<!-- <input type="text" class="input" placeholder="Ваше имя"> -->
+
+<!-- <a href="tel:79991400000" class="phone">+7 999 140 00 00</a> -->
+
+<!-- <button class="btn btn--transparent">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button>
+
+        <button class="btn btn--fill">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->

@@ -1,7 +1,7 @@
 // === MAIN GOODS SLIDER ===
 
 .main-goods {
-    padding-top: 62px;
+    padding: 40px 0;
 
     &.popular {
         padding-top: 42px;
@@ -59,7 +59,7 @@
     &__wrapper {
         display: flex;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
     .main-goods__item {
