@@ -66,7 +66,8 @@ const styleLibs = () => {
         // 'node_modules/aos/dist/aos.css'
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.min.css',
-        'node_modules/choices.js/public/assets/styles/choices.min.css'
+        'node_modules/choices.js/public/assets/styles/choices.min.css',
+        'node_modules/nouislider/dist/nouislider.min.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -80,6 +81,7 @@ const scriptLibs = () => {
         // 'node_modules/mixitup/dist/mixitup.min.js',
         // 'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',
         // 'node_modules/fslightbox/index.js',
+        'node_modules/nouislider/dist/nouislider.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/aos/dist/aos.js',
         'node_modules/choices.js/public/assets/scripts/choices.min.js'

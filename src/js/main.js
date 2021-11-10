@@ -226,15 +226,59 @@ document.querySelectorAll('.product__wish').forEach(function (item) {
 if (document.querySelector('.product__description-text')) {
     const text = document.querySelectorAll('.product__description-text')
 
-    text.forEach(function(item) {
-        const dots = item.querySelector('.dots'),
-             btn = item.querySelector('.product__description-btn'),
-             moreText = item.querySelector('.show-more-text');
-    
-        btn.addEventListener('click', function() {
+    text.forEach(function (item) {
+        const btn = item.querySelector('.product__description-btn');
+
+        btn.addEventListener('click', function () {
             if (!item.classList.contains('show-text')) {
                 item.classList.add('show-text')
             }
         })
     });
 };
+
+// === CATEGORY RANGE SLIDER ===
+
+const rangeSlider = document.querySelector('.category-price__slider');
+
+if (rangeSlider) {
+    noUiSlider.create(rangeSlider, {
+        start: [100, 99999],
+        connect: true,
+        step: 1,
+        range: {
+            'min': [100],
+            'max': [99999]
+        }
+    });
+
+    const input0 = document.querySelector('#input-0'); 
+    const input1 = document.querySelector('#input-1');
+
+    const inputs = [input0, input1];
+
+    rangeSlider.noUiSlider.on('update', function(values, handle) {
+        inputs[handle].value = Math.round(values[handle])
+    });
+
+    const setRangeSlider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+        rangeSlider.noUiSlider.set(arr)
+    };
+
+    inputs.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+            setRangeSlider(index, e.currentTarget.value);
+        });
+    });
+};
+
+// === CATEGORY MOVILE ===
+
+const categoryBtn = document.querySelector('.category__mobile-btn');
+
+categoryBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.category').classList.toggle('category--active')
+});

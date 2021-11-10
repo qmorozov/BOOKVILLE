@@ -76,7 +76,8 @@ img {
 a,
 button,
 input,
-textarea {
+textarea,
+label {
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -662,5 +663,38 @@ body {
         &:not(:first-child) {
             display: none;
         }
+    }
+}
+
+// === PAGINATION ===
+
+.pagination {
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+        font-weight: $fw-light;
+        line-height: 29px;
+        user-select: none;
+        background-color: $light-50;
+        border-radius: 100%;
+        box-shadow: 0 0 10px rgba(158, 158, 158, 0.25);
+        transition: $transition;
+
+        & + & {
+            margin-left: 16px;
+        }
+
+        &-current {
+            color: $light-50;
+            background-color: $dark-450;
+        }
+    }
+
+    a:hover {
+        background-color: darken($light-50, 5);
     }
 }
