@@ -77,6 +77,7 @@ const styleLibs = () => {
 // === PLUG IN LIBS JS ===
 const scriptLibs = () => {
     return src([
+        'node_modules/imask/dist/imask.min.js',
         'node_modules/lazysizes/lazysizes.min.js',
         // 'node_modules/mixitup/dist/mixitup.min.js',
         // 'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',

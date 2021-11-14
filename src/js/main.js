@@ -74,8 +74,10 @@ window.addEventListener('click', (e) => {
 
 // === SELECT ===
 
-const choices = new Choices("select", {
-    searchEnabled: false,
+document.querySelectorAll('.select-item').forEach(function (item) {2
+    const choices = new Choices(item, {
+        searchEnabled: false,
+    });
 });
 
 // === DROPDOWN ===
@@ -252,12 +254,12 @@ if (rangeSlider) {
         }
     });
 
-    const input0 = document.querySelector('#input-0'); 
+    const input0 = document.querySelector('#input-0');
     const input1 = document.querySelector('#input-1');
 
     const inputs = [input0, input1];
 
-    rangeSlider.noUiSlider.on('update', function(values, handle) {
+    rangeSlider.noUiSlider.on('update', function (values, handle) {
         inputs[handle].value = Math.round(values[handle])
     });
 
@@ -278,7 +280,21 @@ if (rangeSlider) {
 
 const categoryBtn = document.querySelector('.category__mobile-btn');
 
-categoryBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    document.querySelector('.category').classList.toggle('category--active')
-});
+if (categoryBtn) {
+    categoryBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector('.category').classList.toggle('category--active')
+    });
+};
+
+// === PHONE MASK ===
+
+const element = document.getElementById('input__phone');
+
+if (element) {
+    const maskOptions = {
+        mask: '+380 (00) 000-00-00',
+        lazy: false,
+    };
+    const mask = IMask(element, maskOptions);
+}

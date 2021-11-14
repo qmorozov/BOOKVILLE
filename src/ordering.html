@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" aria-label="breadcrumbs">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="javascript:void(0)" aria-label="breadcrumbs">
+                                Корзина
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>
+                                Оформление заказа
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / BREADCRUMBS -->
+
+            <!-- ORDERING -->
+            <section class="ordering">
+                <div class="container">
+                    <div class="ordering__inner">
+
+                        <h1 class="ordering__title title">
+                            Оформление заказа
+                        </h1>
+
+                        <form class="ordering__form">
+
+                            <div class="ordering__form-inner">
+
+                                <!-- payment details -->
+                                <div class="ordering__indent">
+                                    <h2 class="ordering__subtitle">
+                                        Детали оплаты
+                                    </h2>
+
+                                    <div class="ordering__details payment-details">
+
+                                        <div class="payment-details__items">
+                                            <input class="payment-details__item input" type="text" name="name" placeholder="Ваше имя" />
+
+                                            <input class="payment-details__item input" type="text" name="surname" placeholder="Ваша фамилия" />
+
+                                            <input class="payment-details__item input" type="text" name="email" placeholder="E-mail" />
+
+                                            <input class="payment-details__item input" type="text" name="phone" id="input__phone" placeholder="Номер телефона" />
+                                        </div>
+
+                                        <div class="payment-details__item payment-detail__select">
+                                            <select class="select-item" name="country" aria-label="countries">
+                                                <option value="UA">Украина</option>
+                                                <option value="MD">Молдова</option>
+                                                <option value="PL">Польша</option>
+                                                <option value="GR">Грузия</option>
+                                                <option value="DE">Германия</option>
+                                                <option value="FR">Франция</option>
+                                                <option value="IT">Италия</option>
+                                            </select>
+                                        </div>
+
+                                        <input class="payment-details__item input" type="text" name="street" placeholder="Улица и т.д." />
+
+                                        <input class="payment-details__item input" type="text" name="entrance" placeholder="Подъезд, этаж и т.п." />
+
+                                        <input class="payment-details__item input" type="text" name="populated_area" placeholder="Населенный пункт" />
+
+                                        <div class="payment-details__items">
+                                            <input class="payment-details__item input" type="text" name="region" placeholder="Область/регион" />
+
+                                            <input class="payment-details__item input" type="text" name="postal_code" placeholder="Почтовый индекс" />
+                                        </div>
+
+                                        <div class="payment-details__additional">
+                                            <label class="payment-details__additional-title" for="additional__information">
+                                                Дополнительная информация
+                                            </label>
+
+                                            <input class="payment-details__item input" type="text" id="additional__information" name="additional__information" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- payment details -->
+
+                                <!-- your order -->
+                                <div class="ordering__payment">
+                                    <h2 class="ordering__subtitle">
+                                        Ваш заказ
+                                    </h2>
+
+                                    <div class="ordering__payment-content">
+
+                                        <div class="ordering__card order-card">
+
+                                            <div class="order-card__top">
+                                                <div class="order-card__top-title">
+                                                    Товар
+                                                </div>
+                                                <div class="order-card__top-text">
+                                                    Итого
+                                                </div>
+                                            </div>
+
+                                            <div class="order-card__items">
+
+                                                <div class="order-card__item">
+                                                    <div class="order-card__item-info">
+                                                        <p class="order-card__item-author">
+                                                            Ольга Примаченко
+                                                        </p>
+                                                        <h3 class="order-card__item-title">
+                                                            К себе нежно
+                                                        </h3>
+                                                    </div>
+                                                    <span class="order-card__item-price">
+                                                        790 ₽
+                                                    </span>
+                                                </div>
+
+                                                <div class="order-card__item">
+                                                    <div class="order-card__item-info">
+                                                        <p class="order-card__item-author">
+                                                            Ольга Примаченко
+                                                        </p>
+                                                        <h3 class="order-card__item-title">
+                                                            К себе нежно
+                                                        </h3>
+                                                    </div>
+                                                    <span class="order-card__item-price">
+                                                        790 ₽
+                                                    </span>
+                                                </div>
+
+                                                <div class="order-card__item">
+                                                    <div class="order-card__item-info">
+                                                        <p class="order-card__item-author">
+                                                            Ольга Примаченко
+                                                        </p>
+                                                        <h3 class="order-card__item-title">
+                                                            К себе нежно
+                                                        </h3>
+                                                    </div>
+                                                    <span class="order-card__item-price">
+                                                        790 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                            <p class="ordering-card__delivery">
+                                                *Стоимость доставки уточним при звонке
+                                            </p>
+
+                                            <div class="ordering-card__total">
+                                                <p class="ordering-card__total-text">
+                                                    Итого
+                                                </p>
+                                                <span class="ordering-card__total-price">
+                                                    3.790 ₽
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        <button class="ordering__btn btn btn--fill" type="submit" aria-label="confirm the order">
+                                            <span class="btn__text">
+                                                ПОДТВЕРДИТЬ ЗАКАЗ
+                                            </span>
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <!-- your order -->
+
+                            </div>
+
+                            <div class="pay-method">
+
+                                <div class="pay-method__box payment-method">
+                                    <h2 class="pay-method__title">
+                                        Способ оплаты
+                                    </h2>
+
+                                    <div class="pay-method__items">
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="payment-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                Оплата наличными
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="payment-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                Оплата переводом
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="payment-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                Наличными курьеру
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="payment-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                Оплата банковской картой
+                                            </span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="pay-method__box shipping-method">
+                                    <h2 class="pay-method__title">
+                                        Способ доставки
+                                    </h2>
+
+                                    <div class="pay-method__items">
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="shipping-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                Самовывоз
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="shipping-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                По Молдове
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="shipping-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                По Кишиневу
+                                            </span>
+                                        </label>
+
+                                        <label class="pay-method__item">
+                                            <input class="pay-method__item-radio" type="radio" name="shipping-method">
+                                            <span class="pay-method__item-radio-fake"></span>
+                                            <span class="pay-method__item-text">
+                                                По Европе
+                                            </span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / ORDERING -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+
+<!-- javascript:void(0) -->
+
+<!-- <a class="logo" href="#" aria-label="logo">
+    <img class="logo__img" src="images/content/logo.png" alt="logo">
+</a> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->
+
+
+<!-- <h2 class="title">Популярные товары</h2>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.
+        </p> -->
+
+<!-- <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        Книги для детей
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" aria-label="breadcrumbs">
+                        3-7 лет
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>
+                        К себе нежно
+                    </span>
+                </li>
+            </ul>
+        </div> -->
+
+
+<!-- <input type="text" class="input" placeholder="Ваше имя"> -->
+
+<!-- <a href="tel:79991400000" class="phone">+7 999 140 00 00</a> -->
+
+<!-- <button class="btn btn--transparent">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button>
+
+        <button class="btn btn--fill">
+            <span class="btn__text">
+                ОСТАВИТЬ ЗАЯВКУ
+            </span>
+        </button> -->
+
+<!-- <div class="card">
+    <a class="card-link" href="#" aria-label="product link">
+        <img class="card__img" src="images/content/card-img-1.png" alt="card-img">
+        <span class="card__author">
+            Ольга Примаченко
+        </span>
+        <span class="card__title">
+            К себе нежно
+        </span>
+        <span class="card__price">
+            790
+        </span>
+    </a>
+    <button class="card__wish" type="button" aria-label="product wish"></button>
+    <button class="card__buy-btn" type="button" aria-label="product buy"></button>
+    <span class="card__discount">5%</span>
+</div> -->

@@ -50,5 +50,8 @@
     "swiper": "^6.7.5",
     "webpack": "^5.44.0",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "imask": "^6.2.2"
   }
 }
