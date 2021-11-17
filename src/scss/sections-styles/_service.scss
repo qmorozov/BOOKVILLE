@@ -1,6 +1,6 @@
 // === SERVICE ===
 .service {
-    padding: 38px 0;
+    padding: rem(38px) 0;
 
     &__inner {
         display: flex;
@@ -11,7 +11,7 @@
 .service__item {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: rem(250px);
 
     &-number {
         position: relative;
@@ -19,25 +19,25 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        min-width: 58px;
-        max-width: 58px;
-        height: 58px;
-        margin-right: 19px;
-        font-size: 30px;
+        min-width: rem(58px);
+        max-width: rem(58px);
+        height: rem(58px);
+        margin-right: rem(19px);
+        font-size: rem(30px);
         font-weight: $fw-light;
-        line-height: 37px;
+        line-height: rem(37px);
         color: $dark-450;
         user-select: none;
-        border: 0.5px solid $dark-450;
+        border: rem(0.5px) solid $dark-450;
         border-radius: 100%;
 
         &::after {
             position: absolute;
-            top: -5px;
-            right: -5px;
+            top: rem(-5px);
+            right: rem(-5px);
             z-index: -1;
-            width: 58px;
-            height: 58px;
+            width: rem(58px);
+            height: rem(58px);
             content: "";
             background-color: $light-250;
             border-radius: 100%;

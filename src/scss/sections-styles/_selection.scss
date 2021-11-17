@@ -1,10 +1,10 @@
 // === SELECTION ===
 
 .selection {
-    margin-bottom: 53px;
+    margin-bottom: rem(53px);
 
     &__title {
-        margin-bottom: 29px;
+        margin-bottom: rem(29px);
     }
 }
 
@@ -18,21 +18,21 @@
     width: 381px;
     height: fit-content;
     background: $light-50;
-    border-radius: 5px;
-    box-shadow: 0 4px 20px rgba($dark-50, 0.1);
+    border-radius: rem(5px);
+    box-shadow: 0 rem(4px) rem(20px) rgba($dark-50, 0.1);
     transition: $transition;
 
     &:not(:nth-child(-n+3)) {
-        margin-top: 19px;
+        margin-top: rem(19px);
     }
 
     &-top {
-        padding: 20px 27px;
+        padding: rem(20px) rem(27px);
         font-weight: $fw-medium;
     }
 
     &-title {
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
         font-size: $fs-l;
         line-height: $lh-xl;
         color: $dark-100;
@@ -45,12 +45,12 @@
     }
 
     &-img {
-        border-radius: 5px;
-        @include img(381px, 206px);
+        border-radius: rem(5px);
+        @include img(rem(381px), rem(206px));
     }
 
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(rem(-5px));
     }
 }
 // === / SELECTION ===

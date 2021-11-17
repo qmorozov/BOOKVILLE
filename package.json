@@ -49,9 +49,9 @@
     "stylelint-config-standard": "^22.0.0",
     "swiper": "^6.7.5",
     "webpack": "^5.44.0",
-    "webpack-stream": "^6.1.2"
+    "webpack-stream": "^6.1.2",
+    "imask": "^6.2.2"
   },
   "dependencies": {
-    "imask": "^6.2.2"
   }
 }

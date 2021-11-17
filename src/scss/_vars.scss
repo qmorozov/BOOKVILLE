@@ -27,21 +27,21 @@ $fw-semibold: 600;
 
 // === FONT-SIZE ===
 
-$fs-xxs: 14px;
-$fs-xs: 16px;
-$fs-s: 18px;
-$fs-m: 20px;
-$fs-l: 22px;
-$fs-xl: 36px;
+$fs-xxs: rem(14px);
+$fs-xs: rem(16px);
+$fs-s: rem(18px);
+$fs-m: rem(20px);
+$fs-l: rem(22px);
+$fs-xl: rem(36px);
 
 // === LINE HEIGHT ===
 
-$lh-xs: 17px;
-$lh-s: 20px;
-$lh-m: 22px;
-$lh-l: 24px;
-$lh-xl: 27px;
-$lh-xxl: 44px;
+$lh-xs: rem(17px);
+$lh-s: rem(20px);
+$lh-m: rem(22px);
+$lh-l: rem(24px);
+$lh-xl: rem(27px);
+$lh-xxl: rem(44px);
 
 // === ANIMATION ===
 
@@ -75,3 +75,14 @@ $light-250: #f4f0eb;
 $light-300: #e9e5e0;
 $light-350: #cdcdcd;
 $light-400: #f3e4de;
+
+// === FUNCTION ===
+// === PX to REM function ===
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+    @return (strip-unit($num) / 16) * 1rem;
+}

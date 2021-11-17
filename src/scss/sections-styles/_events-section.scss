@@ -1,6 +1,6 @@
 // === EVENTS - SECTION ===
 .events-section {
-    padding: 87px 0 68px 0;
+    padding: rem(87px) 0 rem(68px) 0;
 
     &__inner {
         display: flex;
@@ -10,21 +10,21 @@
 }
 
 .events-section__img img {
-    border-radius: 5px;
+    border-radius: rem(5px);
     @include img(525px, 325px);
 }
 
 .events-section__info {
-    width: 607px;
-    padding-left: 20px;
+    width: rem(607px);
+    padding-left: rem(20px);
 
     &-title {
-        margin-bottom: 16px;
+        margin-bottom: rem(16px);
         text-align: left;
     }
 
     &-text {
-        margin-bottom: 23px;
+        margin-bottom: rem(23px);
         font-weight: $fw-ExtraLight;
         color: $dark-50;
     }

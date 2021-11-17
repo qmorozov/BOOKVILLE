@@ -12,7 +12,6 @@
 
     .intro__item-img {
         width: 93%;
-        // height: auto;
         margin: 0 auto;
     }
 
@@ -28,7 +27,7 @@
 @media (max-width: 1200px) {
     // === SELECTION ===
     .selection__item {
-        width: 340px;
+        width: rem(340px);
     }
 
     // === CHOSEN ===
@@ -47,7 +46,7 @@
             margin: 0 auto;
 
             &:nth-child(n+3) {
-                margin-top: 50px;
+                margin-top: rem(50px);
             }
         }
     }
@@ -55,7 +54,7 @@
     .blog__item:nth-child(6n+6),
     .blog__item:nth-child(7n+7) {
         .blog__item-img {
-            height: 260px;
+            height: rem(260px);
         }
     }
 
@@ -66,7 +65,7 @@
         }
 
         &__item {
-            margin-bottom: 15px;
+            margin-bottom: rem(15px);
         }
     }
 }
@@ -79,14 +78,14 @@
 
     // === FOOTER ===
     .footer__menu-item + .footer__menu-item {
-        margin-left: 20px;
+        margin-left: rem(20px);
     }
 }
 
 @media (max-width: 1100px) {
     // === HEADER ===
     .menu__list-item + .menu__list-item {
-        margin-left: 20px;
+        margin-left: rem(20px);
     }
 
     // === FOOTER ===
@@ -95,13 +94,13 @@
         line-height: $lh-s;
 
         & + & {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 
     // === EVENTS ===
     .events-section__img img {
-        max-width: 425px;
+        max-width: rem(425px);
     }
 
     // === SELECTION ===
@@ -111,7 +110,7 @@
         }
 
         &__item {
-            margin-right: 6px;
+            margin-right: rem(6px);
 
             &:nth-child(2n) {
                 margin-right: 0;
@@ -121,39 +120,39 @@
 
     // === CONTACT PAGE ===
     .contact__map {
-        margin-left: 10px;
+        margin-left: rem(10px);
     }
 }
 
 @media (max-width: 1000px) {
     // === HEADER ===
     .header-submenu__text {
-        padding-left: 5px;
+        padding-left: rem(5px);
     }
 
     .menu__list-item {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: rem(16px);
+        line-height: rem(20px);
 
         & + & {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 
     .dropdown {
         width: 100%;
-        padding: 20px 20px 10px 20px;
+        padding: rem(20px) rem(20px) rem(10px) rem(20px);
     }
 
     // === FOOTER ===
     .footer__logo .logo__img {
-        width: 120px;
-        height: 65px;
+        width: rem(120px);
+        height: rem(65px);
     }
 
     // === EVENTS - SECTION ===
     .events-section {
-        padding: 35px 0;
+        padding: rem(35px) 0;
 
         .title {
             font-size: $fs-l;
@@ -161,25 +160,25 @@
         }
 
         &__img img {
-            max-width: 400px;
-            max-height: 275px;
+            max-width: rem(400px);
+            max-height: rem(275px);
         }
 
         &__info-text {
-            margin-bottom: 15px;
-            font-size: 15px;
-            line-height: 18px;
+            margin-bottom: rem(15px);
+            font-size: rem(15px);
+            line-height: rem(18px);
         }
     }
 
     // === ABOUT ===
     .about {
         &__title {
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
 
         &__img {
-            @include img(390px, 380px);
+            @include img(rem(390px), rem(380px));
         }
     }
 
@@ -194,7 +193,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             order: 1;
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
 
         &__img {
@@ -204,7 +203,7 @@
 
     // === DELIVERY ===
     .delivery__content .delivery__text {
-        margin-left: 10px;
+        margin-left: rem(10px);
     }
 
     // === SINGLE - BLOG ===
@@ -212,13 +211,13 @@
         &__content {
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
 
         &__info {
             width: 100%;
             margin-right: 0;
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
         }
 
         &__gallery {
@@ -226,7 +225,7 @@
             justify-content: center;
 
             &-item {
-                margin: 10px 10px 0;
+                margin: rem(10px) rem(10px) 0;
 
                 & + & {
                     margin-left: 0;
@@ -237,7 +236,7 @@
 
     // === CONTACT PAGE ===
     .contact__info {
-        max-width: 310px;
+        max-width: rem(310px);
     }
 
     // === ORDERING ===
@@ -251,7 +250,7 @@
         }
 
         &__payment {
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
     }
 }
@@ -263,7 +262,7 @@
     }
 
     .catalog__item.card {
-        width: 252px;
+        width: rem(252px);
     }
 
     // === SUCCESSFUL ===
@@ -289,11 +288,11 @@
     }
 
     .dropdown {
-        padding: 10px 10px 10px;
+        padding: rem(10px) rem(10px) rem(10px);
 
         &-item {
-            font-size: 16px;
-            line-height: 20px;
+            font-size: rem(16px);
+            line-height: rem(20px);
         }
     }
 
@@ -301,15 +300,15 @@
     .footer {
         &__inner {
             flex-direction: column;
-            padding: 16px 0 20px 0;
+            padding: rem(16px) 0 rem(20px) 0;
         }
 
         &__logo {
-            margin-bottom: 22px;
+            margin-bottom: rem(22px);
         }
 
         &__menu {
-            margin-bottom: 26px;
+            margin-bottom: rem(26px);
 
             &-list {
                 flex-direction: column;
@@ -318,7 +317,7 @@
 
             &-item {
                 & + & {
-                    margin-top: 13px;
+                    margin-top: rem(13px);
                     margin-left: 0;
                 }
             }
@@ -327,23 +326,23 @@
 
     // === INTRO ===
     .intro__btn {
-        bottom: 25px;
-        min-width: 300px;
-        padding: 15px;
+        bottom: rem(25px);
+        min-width: rem(300px);
+        padding: rem(15px);
     }
 
     // === SERVICE ===
     .service__item-number {
-        min-width: 48px;
-        max-width: 48px;
-        height: 48px;
-        margin-right: 5px;
+        min-width: rem(48px);
+        max-width: rem(48px);
+        height: rem(48px);
+        margin-right: rem(5px);
         font-size: $fs-m;
         line-height: $lh-m;
 
         &::before {
-            width: 48px;
-            height: 48px;
+            width: rem(48px);
+            height: rem(48px);
         }
     }
 
@@ -355,9 +354,9 @@
 
         &__img {
             width: 100%;
-            margin-top: 20px;
+            margin-top: rem(20px);
             margin-left: 0;
-            @include img(446px, 446px);
+            @include img(rem(446px), rem(446px));
         }
 
         &__info {
@@ -365,7 +364,7 @@
         }
 
         &__quote {
-            margin-bottom: 24px;
+            margin-bottom: rem(24px);
         }
 
         &__gallery {
@@ -373,7 +372,7 @@
             align-items: center;
 
             &-img + &-img {
-                margin-top: 15px;
+                margin-top: rem(15px);
                 margin-left: 0;
             }
         }
@@ -387,7 +386,7 @@
     // === DELIVERY ===
     .delivery {
         &__item + &__item {
-            margin-top: 15px;
+            margin-top: rem(15px);
         }
 
         &__subtitle {
@@ -396,23 +395,23 @@
         }
 
         &__info + &__info {
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
 
         &__content &__subtitle {
-            margin-bottom: 30px;
+            margin-bottom: rem(30px);
         }
     }
 
     // === PRODUCT ===
     .product {
         &__gallery {
-            width: 350px;
-            height: 400px;
+            width: rem(350px);
+            height: rem(400px);
         }
 
         &__info {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 
@@ -424,8 +423,8 @@
 
         &__inner {
             height: 0;
-            padding: 0 19px 21px 19px;
-            margin-bottom: 20px;
+            padding: 0 rem(19px) rem(21px) rem(19px);
+            margin-bottom: rem(20px);
             visibility: hidden;
             border-radius: 0 0 5px 5px;
             opacity: 0;
@@ -455,7 +454,7 @@
         }
 
         &__item.card {
-            margin: 0 auto 15px;
+            margin: 0 auto rem(15px);
         }
     }
 
@@ -463,7 +462,7 @@
     .pay-method {
         display: flex;
         justify-content: space-between;
-        margin-top: 24px;
+        margin-top: rem(24px);
 
         &__box {
             flex-direction: column;
@@ -473,7 +472,7 @@
         &__items {
             flex-direction: column;
             width: 100%;
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
 
         &__title {
@@ -484,7 +483,7 @@
     .ordering {
         &__inner {
             position: relative;
-            padding-bottom: 500px;
+            padding-bottom: rem(500px);
         }
 
         &__payment {
@@ -513,7 +512,7 @@
         }
 
         &__item:nth-child(n + 2) {
-            margin-top: 50px;
+            margin-top: rem(50px);
         }
     }
 }
@@ -539,7 +538,7 @@
                 width: 100%;
 
                 & + & {
-                    margin-top: 8px;
+                    margin-top: rem(8px);
                     margin-left: 0;
                 }
             }
@@ -548,7 +547,7 @@
 
     // === SERVICE ===
     .service {
-        padding: 18px 0;
+        padding: rem(18px) 0;
 
         &__inner {
             flex-wrap: wrap;
@@ -556,14 +555,14 @@
 
         &__item {
             width: 40%;
-            margin-top: 20px;
+            margin-top: rem(20px);
 
             &-number {
-                margin-right: 13px;
+                margin-right: rem(13px);
 
                 &::after {
-                    width: 48px;
-                    height: 48px;
+                    width: rem(48px);
+                    height: rem(48px);
                 }
             }
         }
@@ -587,21 +586,21 @@
 
         &__img {
             order: 1;
-            margin-top: 19px;
+            margin-top: rem(19px);
         }
     }
 
     // === SELECTION ===
     .selection {
         &__item {
-            width: 270px;
+            width: rem(270px);
 
             &-top {
-                padding: 11px 17px;
+                padding: rem(11px) rem(17px);
             }
 
             &-title {
-                margin-bottom: 5px;
+                margin-bottom: rem(5px);
                 font-size: $fs-m;
                 line-height: $lh-l;
             }
@@ -624,15 +623,15 @@
             flex-direction: column;
 
             & + & {
-                margin-top: 20px;
+                margin-top: rem(20px);
             }
         }
 
         &__content {
-            margin: 30px 0 30px;
+            margin: rem(30px) 0 rem(30px);
 
             .delivery__text {
-                margin-top: 20px;
+                margin-top: rem(20px);
                 margin-left: 0;
             }
         }
@@ -640,24 +639,24 @@
 
     // === SINGLE - BLOG ===
     .single-blog__gallery-item {
-        margin: 10px 0;
+        margin: rem(10px) 0;
     }
 
     // === PRODUCT ===
     .product__attribute-value {
-        margin-left: 10px;
+        margin-left: rem(10px);
     }
 }
 
 @media (max-width: 700px) {
     // === GLOBAL ===
     .breadcrumbs {
-        margin: 25px 0 25px;
+        margin: rem(25px) 0 rem(25px);
     }
 
     // === EVENTS ===
     .events {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
         &__images {
             flex-direction: column;
@@ -665,24 +664,24 @@
         }
 
         &__img + &__img {
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
     }
 
     // === SALES ===
     .sales__title {
-        margin-bottom: 25px;
+        margin-bottom: rem(25px);
     }
 
     // === SINGLE - BLOG ===
     .single-blog__title {
-        margin-bottom: 17px;
+        margin-bottom: rem(17px);
     }
 
     // === CONTACT PAGE ===
     .contact {
         &__title {
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
 
         &__content {
@@ -692,7 +691,7 @@
 
         &__info {
             max-width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: rem(20px);
         }
 
         &__map {
@@ -718,9 +717,9 @@
         }
 
         &__gallery {
-            width: 350px;
-            height: 430px;
-            margin-top: 65px;
+            width: rem(350px);
+            height: rem(430px);
+            margin-top: rem(65px);
         }
 
         &__arrow-next,
@@ -735,7 +734,7 @@
 
         &__title {
             position: absolute;
-            top: 15px;
+            top: rem(15px);
         }
     }
 }
@@ -761,12 +760,12 @@
 
         &-top {
             align-items: center;
-            padding: 12px 0;
+            padding: rem(12px) 0;
         }
 
         & .logo__img {
-            width: 96px;
-            height: 52px;
+            width: rem(96px);
+            height: rem(52px);
         }
 
         &__mobile-items {
@@ -778,7 +777,7 @@
             top: 0;
             right: 0;
             left: 0;
-            box-shadow: 0 4px 10px rgba(71, 71, 71, 0.2);
+            box-shadow: 0 rem(4px) rem(10px) rgba(71, 71, 71, 0.2);
             animation-name: show-header;
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
@@ -790,9 +789,9 @@
 
         &-submenu {
             order: 1;
-            padding-top: 28px;
-            margin-top: 17px;
-            border-top: 1px solid $dark-250;
+            padding-top: rem(28px);
+            margin-top: rem(17px);
+            border-top: rem(1px) solid $dark-250;
 
             &__text {
                 display: block;
@@ -812,25 +811,25 @@
 
     .menu__list {
         position: absolute;
-        top: 15px;
+        top: rem(15px);
         left: -100%;
         flex-direction: column;
-        width: 357px;
-        height: 654px;
-        padding: 21px 24px;
+        width: rem(357px);
+        height: rem(654px);
+        padding: rem(21px) rem(24px);
         overflow-y: scroll;
         background-color: $light-50;
-        border-radius: 5px;
-        box-shadow: 0 0 30px rgba(71, 71, 71, 0.1);
+        border-radius: rem(5px);
+        box-shadow: 0 0 rem(30px) rgba(71, 71, 71, 0.1);
         opacity: 0;
         transition: $transition;
 
         &-item {
-            padding: 12px 0;
+            padding: rem(12px) 0;
 
             & + & {
                 margin-left: 0;
-                border-top: 1px solid $light-350;
+                border-top: rem(1px) solid $light-350;
             }
 
             &:nth-child(2) {
@@ -839,7 +838,7 @@
         }
 
         .header-submenu {
-            padding-top: 28px;
+            padding-top: rem(28px);
         }
     }
 
@@ -864,16 +863,16 @@
             font-size: $fs-s;
             line-height: $lh-m;
             color: #1b1b1b;
-            border-top: 1px solid $light-350;
+            border-top: rem(1px) solid $light-350;
 
             &__title,
             &__point {
-                padding: 12px 0;
+                padding: rem(12px) 0;
             }
 
             &__point {
                 display: none;
-                border-top: 1px solid $light-350;
+                border-top: rem(1px) solid $light-350;
 
                 & + & {
                     margin-top: 0;
@@ -889,8 +888,8 @@
                     position: absolute;
                     top: 50%;
                     right: 0;
-                    width: 11px;
-                    height: 6px;
+                    width: rem(11px);
+                    height: rem(6px);
                     content: "";
                     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 11 6'%3e%3cpath fill='%23383838' d='m5.497 4.904 4.78-4.78a.423.423 0 0 1 .6.598l-5.08 5.08a.423.423 0 0 1-.599 0L.118.722a.423.423 0 0 1 .6-.598l4.78 4.78Z'/%3e%3c/svg%3e ");
                     background-repeat: no-repeat;
@@ -907,10 +906,10 @@
         }
 
         &-submenu__point {
-            padding: 12px 0 12px 14px;
+            padding: rem(12px) 0 rem(12px) rem(14px);
 
             & + & {
-                border-top: 1px solid $light-350;
+                border-top: rem(1px) solid $light-350;
             }
         }
 
@@ -928,55 +927,55 @@
 
     // === INTRO ===
     .intro__btn {
-        bottom: 15px;
-        min-width: 250px;
-        padding: 11px 19px;
+        bottom: rem(15px);
+        min-width: rem(250px);
+        padding: rem(11px) rem(19px);
 
         &-text {
-            font-size: 12px;
-            line-height: 15px;
+            font-size: rem(12px);
+            line-height: rem(15px);
         }
     }
 
     // === INTRO ===
     .intro__slider-next::before {
-        right: -5px;
+        right: rem(-5px);
     }
 
     .intro__slider-prev::before {
-        left: -5px;
+        left: rem(-5px);
     }
 
     // === ABOUT ===
     .about {
         &__title {
-            margin-bottom: 17px;
+            margin-bottom: rem(17px);
         }
 
         &__img {
-            margin-top: 13px;
+            margin-top: rem(13px);
         }
 
         &__text + &__text {
-            margin-top: 11px;
+            margin-top: rem(11px);
         }
 
         &__gallery {
-            margin-bottom: 23px;
+            margin-bottom: rem(23px);
         }
     }
 
     // === SALES ===
     .sales__item {
-        margin: 0 0 40px;
+        margin: 0 0 rem(40px);
     }
 
     // === CHOSEN ===
     .chosen {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
         &__item {
-            margin: 0 0 20px 0;
+            margin: 0 0 rem(20px) 0;
         }
     }
 }
@@ -984,22 +983,22 @@
 @media (max-width: 600px) {
     // === GLOBAL ===
     .container {
-        padding: 0 10px;
+        padding: 0 rem(10px);
     }
 
     // === ABOUT ====
     .about-section {
-        padding: 21px 0;
+        padding: rem(21px) 0;
         text-align: center;
 
         &__pretitle {
-            margin-bottom: 18px;
+            margin-bottom: rem(18px);
             font-size: $fs-xs;
             line-height: $lh-s;
         }
 
         &__title {
-            margin-bottom: 14px;
+            margin-bottom: rem(14px);
             font-size: $fs-s;
             line-height: $lh-m;
             text-align: center;
@@ -1007,12 +1006,12 @@
 
         &__info {
             justify-content: unset;
-            padding-bottom: 31px;
+            padding-bottom: rem(31px);
 
             &-text {
                 flex-shrink: 0;
                 font-size: $fs-xxs;
-                line-height: 19px;
+                line-height: rem(19px);
 
                 & + & {
                     margin-left: 0;
@@ -1033,7 +1032,7 @@
         }
 
         &__wrapper {
-            padding-top: 19px;
+            padding-top: rem(19px);
         }
 
         &__show-all {
@@ -1043,33 +1042,33 @@
 
     // === SELECTION ===
     .selection {
-        margin-bottom: 21px;
+        margin-bottom: rem(21px);
 
         &__title {
-            font-size: 18px;
-            line-height: 22px;
+            font-size: rem(18px);
+            line-height: rem(22px);
         }
 
         &__item {
-            width: 143px;
+            width: rem(143px);
 
             &:not(:nth-child(-n+2)) {
-                margin-top: 10px;
+                margin-top: rem(10px);
             }
 
             &-top {
-                padding: 5px 8px;
+                padding: rem(5px) rem(8px);
             }
 
             &-title {
-                margin-bottom: 4px;
-                font-size: 12px;
-                line-height: 15px;
+                margin-bottom: rem(4px);
+                font-size: rem(12px);
+                line-height: rem(15px);
             }
 
             &-subtitle {
-                font-size: 10px;
-                line-height: 12px;
+                font-size: rem(10px);
+                line-height: rem(12px);
             }
         }
     }
@@ -1083,7 +1082,7 @@
     // === CATALOG ===
     .catalog__sort {
         display: block;
-        padding: 10px 0;
+        padding: rem(10px) 0;
         overflow-x: scroll;
         white-space: nowrap;
     }
@@ -1095,11 +1094,11 @@
         }
 
         &__title {
-            margin-bottom: 18px;
+            margin-bottom: rem(18px);
         }
 
         &__mobile-btn {
-            padding: 15px 21px;
+            padding: rem(15px) rem(21px);
             font-size: $fs-xxs;
             line-height: $lh-xs;
         }
@@ -1111,32 +1110,32 @@
 
         &-price {
             &__label {
-                width: 140px;
-                height: 40px;
-                padding: 10px 15px;
+                width: rem(140px);
+                height: rem(40px);
+                padding: rem(10px) rem(15px);
             }
 
             &__inputs {
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 20px;
+                margin-bottom: rem(20px);
             }
         }
 
         &__result {
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
         }
     }
 
     .filter {
         &__title {
-            margin-bottom: 15px;
+            margin-bottom: rem(15px);
             font-size: $fs-xs;
             line-height: $lh-s;
         }
 
         &__checkbox-fake {
-            margin-right: 10px;
+            margin-right: rem(10px);
         }
 
         &__text {
@@ -1147,7 +1146,7 @@
 
     // === ORDERING ===
     .ordering__title {
-        margin-bottom: 22px;
+        margin-bottom: rem(22px);
     }
 
     .pay-method {
@@ -1168,26 +1167,26 @@
     }
 
     .breadcrumbs {
-        margin: 20px 0 20px;
+        margin: rem(20px) 0 rem(20px);
     }
 
     // === HEADER ===
     .search-form {
         &__input {
-            height: 30px;
-            padding: 10px;
+            height: rem(30px);
+            padding: rem(10px);
             font-size: $fs-xxs;
             line-height: normal;
         }
 
         &__button {
-            width: 40px;
-            height: 30px;
-            margin-left: 10px;
+            width: rem(40px);
+            height: rem(30px);
+            margin-left: rem(10px);
 
             svg {
-                width: 13px;
-                height: 13px;
+                width: rem(13px);
+                height: rem(13px);
             }
         }
     }
@@ -1201,17 +1200,17 @@
 
         &__item {
             width: 80%;
-            margin-top: 14px;
+            margin-top: rem(14px);
 
             &-number {
-                min-width: 44px;
-                max-width: 44px;
-                height: 44px;
+                min-width: rem(44px);
+                max-width: rem(44px);
+                height: rem(44px);
                 line-height: $lh-l;
 
                 &::after {
-                    width: 43px;
-                    height: 43px;
+                    width: rem(43px);
+                    height: rem(43px);
                 }
             }
         }
@@ -1219,24 +1218,24 @@
 
     // === EVENTS ===
     .events-section {
-        padding: 22px 0;
+        padding: rem(22px) 0;
 
         .title {
-            margin-bottom: 14px;
+            margin-bottom: rem(14px);
             font-size: $fs-s;
             line-height: $lh-m;
         }
 
         &__info-text {
             font-size: $fs-xxs;
-            line-height: 14px;
+            line-height: rem(14px);
         }
     }
 
     // === MAON GOODS ===
     .main-goods {
         &.popular {
-            padding-top: 25px;
+            padding-top: rem(25px);
         }
 
         &__title.title {
@@ -1245,86 +1244,86 @@
         }
 
         &__wrapper {
-            padding-top: 19px;
+            padding-top: rem(19px);
         }
     }
 
     // === BLOG PAGE ===
     .blog {
         &__items {
-            margin-bottom: 14px;
+            margin-bottom: rem(14px);
         }
 
         &__item {
-            max-width: 296px;
+            max-width: rem(296px);
 
             &:nth-child(n + 2) {
-                margin-top: 20px;
+                margin-top: rem(20px);
             }
 
             &-img img {
-                width: 296px;
+                width: rem(296px);
             }
 
             &-info {
-                margin-top: 14px;
+                margin-top: rem(14px);
             }
 
             &-title {
-                margin-bottom: 13px;
+                margin-bottom: rem(13px);
                 font-size: $fs-xxs;
                 line-height: $lh-xs;
             }
 
             &-date {
-                font-size: 12px;
-                line-height: 15px;
+                font-size: rem(12px);
+                line-height: rem(15px);
             }
         }
     }
 
     // === CATALOG ===
     .catalog__item.card {
-        width: 140px;
+        width: rem(140px);
     }
 
     // === ORDERING ===
     .ordering {
         &__subtitle {
-            margin-bottom: 21px;
+            margin-bottom: rem(21px);
             font-size: $fs-xxs;
             line-height: $lh-xs;
         }
 
         .input {
-            padding: 15px 29px;
+            padding: rem(15px) rem(29px);
         }
 
         &__payment {
-            max-width: 298px;
+            max-width: rem(298px);
         }
 
         &__inner {
-            padding-bottom: 450px;
-            margin-bottom: 27px;
+            padding-bottom: rem(450px);
+            margin-bottom: rem(27px);
         }
     }
 
     .payment-details {
         &__item {
-            margin-top: 5px;
+            margin-top: rem(5px);
         }
     }
 
     .payment-detail__select .choices__item--selectable {
-        padding: 15px 29px;
+        padding: rem(15px) rem(29px);
     }
 
     .payment-details__additional {
-        margin-top: 23px;
+        margin-top: rem(23px);
 
         .input {
-            margin-top: 21px;
+            margin-top: rem(21px);
         }
 
         &-title {
@@ -1340,7 +1339,7 @@
         }
 
         &__item {
-            margin-bottom: 15px;
+            margin-bottom: rem(15px);
 
             &-text {
                 font-size: $fs-xxs;
@@ -1348,13 +1347,13 @@
             }
 
             &-radio-fake {
-                width: 28px;
-                height: 28px;
-                margin-right: 13px;
+                width: rem(28px);
+                height: rem(28px);
+                margin-right: rem(13px);
 
                 &::before {
-                    width: 14px;
-                    height: 14px;
+                    width: rem(14px);
+                    height: rem(14px);
                 }
             }
         }
@@ -1362,7 +1361,7 @@
 
     .order {
         &-card {
-            padding: 14px 18px 17px 17px;
+            padding: rem(14px) rem(18px) rem(17px) rem(17px);
 
             &__top {
                 &-title,
@@ -1373,14 +1372,14 @@
             }
 
             &__items {
-                padding: 19px 0 14px;
-                margin-top: 17px;
+                padding: rem(19px) 0 rem(14px);
+                margin-top: rem(17px);
             }
 
             &__item {
                 &-author {
-                    font-size: 12px;
-                    line-height: 15px;
+                    font-size: rem(12px);
+                    line-height: rem(15px);
                 }
 
                 &-title,
@@ -1399,19 +1398,19 @@
         }
 
         &__total {
-            margin-top: 14px;
+            margin-top: rem(14px);
 
             &-text,
             &-price {
-                font-size: 16px;
-                line-height: 20px;
+                font-size: rem(16px);
+                line-height: rem(20px);
             }
         }
     }
 
     .payment-detail__select {
         .choices .choices__list--dropdown {
-            margin: 5px 0;
+            margin: rem(5px) 0;
         }
     }
 }
@@ -1421,30 +1420,30 @@
     .header__item {
         &--wish,
         &--basket {
-            width: 21px;
-            height: 21px;
+            width: rem(21px);
+            height: rem(21px);
         }
 
         &-count {
-            width: 18px;
-            height: 18px;
-            font-size: 8px;
+            width: rem(18px);
+            height: rem(18px);
+            font-size: rem(8px);
             line-height: 0;
         }
     }
 
     .search-button {
-        width: 18px;
-        height: 18px;
+        width: rem(18px);
+        height: rem(18px);
     }
 
     .menu__list {
-        height: 600px;
+        height: rem(600px);
     }
 
     // === INTRO ===
     .intro__btn {
-        min-width: 192px;
+        min-width: rem(192px);
 
         &-text {
             white-space: nowrap;
@@ -1452,12 +1451,12 @@
     }
 
     .sales__item {
-        margin: 0 0 20px 0;
+        margin: 0 0 rem(20px) 0;
     }
 
     // === DELIVERY ===
     .delivery {
-        margin-bottom: 21px;
+        margin-bottom: rem(21px);
 
         &__subtitle {
             font-size: $fs-xxs;
@@ -1467,15 +1466,15 @@
 
     .delivery__point {
         &-num {
-            min-width: 44px;
-            max-width: 44px;
-            height: 44px;
+            min-width: rem(44px);
+            max-width: rem(44px);
+            height: rem(44px);
             font-size: $fs-m;
             line-height: $lh-l;
 
             &::after {
-                width: 44px;
-                height: 44px;
+                width: rem(44px);
+                height: rem(44px);
             }
         }
 
@@ -1492,31 +1491,31 @@
         }
 
         &__gallery {
-            width: 255px;
-            height: 333px;
-            margin-top: 50px;
+            width: rem(255px);
+            height: rem(333px);
+            margin-top: rem(50px);
         }
 
         &__slider {
-            padding-top: 15px;
+            padding-top: rem(15px);
         }
 
         &__wish {
-            top: 6px;
-            right: 13px;
-            width: 46px;
-            height: 46px;
+            top: rem(6px);
+            right: rem(13px);
+            width: rem(46px);
+            height: rem(46px);
 
             span {
-                width: 20px;
-                height: 19px;
+                width: rem(20px);
+                height: rem(19px);
             }
         }
 
         &__author {
-            font-size: 12px;
+            font-size: rem(12px);
             font-weight: $fw-light;
-            line-height: 15px;
+            line-height: rem(15px);
             color: #262626;
         }
 
@@ -1527,20 +1526,20 @@
         }
 
         &__status {
-            padding-left: 23px;
-            margin-top: 16px;
+            padding-left: rem(23px);
+            margin-top: rem(16px);
             font-size: $fs-xxs;
             line-height: $lh-xs;
 
             &::before {
-                width: 12px;
-                height: 12px;
+                width: rem(12px);
+                height: rem(12px);
             }
         }
 
         &__order {
             justify-content: space-between;
-            padding: 11px 0;
+            padding: rem(11px) 0;
         }
 
         &__price {
@@ -1550,22 +1549,22 @@
         }
 
         &__description-text {
-            margin-top: 14px;
+            margin-top: rem(14px);
         }
     }
 
     // === SUCCESSFUL ===
     .successful {
         &__title {
-            margin-bottom: 18px;
+            margin-bottom: rem(18px);
         }
     }
 
     .order-value {
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
 
         &__text {
-            margin-right: 21px;
+            margin-right: rem(21px);
             font-size: $fs-xxs;
             line-height: $lh-xs;
         }
@@ -1577,14 +1576,14 @@
     }
 
     .payment-option {
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
         font-size: $fs-xxs;
         line-height: $lh-xs;
     }
 
     .ordering-card__pay-method {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: rem(12px);
+        line-height: rem(15px);
     }
 }
 
@@ -1592,9 +1591,9 @@
     // === HEADER ===
     .menu__list {
         top: 0;
-        width: 300px;
-        height: 500px;
-        padding: 15px 15px;
+        width: rem(300px);
+        height: rem(500px);
+        padding: rem(15px) rem(15px);
     }
 
     // === CONTACT PAGE ===
@@ -1603,24 +1602,24 @@
         &__phone,
         &__email,
         &__social-title {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: rem(14px);
+            line-height: rem(17px);
         }
 
         &__address {
-            margin-bottom: 19px;
+            margin-bottom: rem(19px);
         }
 
         &__phone + &__phone {
-            margin-top: 11px;
+            margin-top: rem(11px);
         }
 
         &__email {
-            margin-top: 17px;
+            margin-top: rem(17px);
         }
 
         &__social {
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
     }
 }

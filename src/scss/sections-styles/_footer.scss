@@ -6,8 +6,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 136px;
-        padding: 19px 0 33px;
+        min-height: rem(136px);
+        padding: rem(19px) 0 rem(33px);
     }
 }
 
@@ -23,7 +23,7 @@
         transition: $transition;
 
         & + & {
-            margin-left: 36px;
+            margin-left: rem(36px);
         }
 
         &:hover {

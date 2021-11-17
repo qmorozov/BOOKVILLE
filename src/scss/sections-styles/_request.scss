@@ -3,16 +3,16 @@
     background-color: $light-300;
 
     &__inner {
-        padding: 41px 0 48px 0;
+        padding: rem(41px) 0 rem(48px) 0;
     }
 
     &__info {
-        margin-bottom: 38px;
+        margin-bottom: rem(38px);
         text-align: center;
     }
 
     &__title {
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
     }
 
     &__text {
@@ -29,7 +29,7 @@
             width: 33.3%;
 
             & + & {
-                margin-left: 14px;
+                margin-left: rem(14px);
             }
         }
     }

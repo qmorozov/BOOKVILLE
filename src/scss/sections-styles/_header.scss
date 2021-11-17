@@ -9,8 +9,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 12px 0 27px;
-    border-bottom: 1px solid $light-350;
+    padding: rem(12px) 0 rem(27px);
+    border-bottom: rem(1px) solid $light-350;
 }
 
 .header__items {
@@ -22,7 +22,7 @@
     transition: $transition;
 
     &:not(:last-child) {
-        margin-right: 29px;
+        margin-right: rem(29px);
     }
 
     svg {
@@ -31,19 +31,19 @@
 
     &-count {
         position: absolute;
-        top: -6px;
-        right: -11px;
+        top: rem(-6px);
+        right: rem(-11px);
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 22px;
-        height: 22px;
-        font-size: 10px;
-        line-height: 12px;
+        width: rem(22px);
+        height: rem(22px);
+        font-size: rem(10px);
+        line-height: rem(12px);
         color: $light-50;
         user-select: none;
         background-color: #61564f;
-        border: 2px solid $light-50;
+        border: rem(2px) solid $light-50;
         border-radius: 100%;
     }
 
@@ -54,24 +54,24 @@
     }
 
     &--search {
-        width: 28px;
-        height: 28px;
+        width: rem(28px);
+        height: rem(28px);
     }
 
     &--wish {
-        width: 31px;
-        height: 31px;
+        width: rem(31px);
+        height: rem(31px);
     }
 
     &--basket {
-        width: 32px;
-        height: 32px;
+        width: rem(32px);
+        height: rem(32px);
     }
 }
 
 .search-button {
-    width: 28px;
-    height: 28px;
+    width: rem(28px);
+    height: rem(28px);
 
     svg {
         fill: $dark-450;
@@ -96,7 +96,7 @@
     right: 0;
     left: 0;
     z-index: 9999;
-    padding: 20px 0;
+    padding: rem(20px) 0;
     background-color: rgba(#e5e5e5, .8);
     transition: $transition;
 
@@ -105,27 +105,27 @@
 
         &__input {
             width: 100%;
-            padding: 13px 29px;
+            padding: rem(13px) rem(29px);
             background-color: $light-200;
-            border-radius: 5px;
+            border-radius: rem(5px);
         }
 
         &__button {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 43px;
-            margin-left: 20px;
+            width: rem(50px);
+            height: rem(43px);
+            margin-left: rem(20px);
             cursor: pointer;
             background-color: $light-200;
-            border-radius: 5px;
+            border-radius: rem(5px);
             transition: $transition;
             object-fit: cover;
 
             svg {
-                width: 17px;
-                height: 17px;
+                width: rem(17px);
+                height: rem(17px);
                 stroke: $dark-450;
             }
 
@@ -146,7 +146,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 56px;
+    height: rem(56px);
 }
 
 .header-submenu {
@@ -156,16 +156,16 @@
 
     &__burger {
         position: relative;
-        width: 25px;
-        height: 16px;
+        width: rem(25px);
+        height: rem(16px);
         transition: $transition;
 
         span {
             position: absolute;
-            top: 7px;
+            top: rem(7px);
             display: flex;
-            width: 19px;
-            height: 2px;
+            width: rem(19px);
+            height: rem(2px);
             background-color: $dark-450;
             transition: $transition;
         }
@@ -175,7 +175,7 @@
             position: absolute;
             left: 0;
             width: 100%;
-            height: 2px;
+            height: rem(2px);
             content: "";
             background-color: $dark-450;
             transition: $transition;
@@ -191,7 +191,7 @@
     }
 
     &__text {
-        padding-left: 18px;
+        padding-left: rem(18px);
         font-size: $fs-s;
         font-weight: $fw-medium;
         line-height: $lh-m;
@@ -228,7 +228,7 @@
         transition: $transition;
 
         & + & {
-            margin-left: 36px;
+            margin-left: rem(36px);
         }
 
         &:hover {
@@ -244,7 +244,7 @@
 
         .header-submenu__burger {
             &::before {
-                bottom: 4px;
+                bottom: rem(4px);
                 transform: rotate(45deg);
             }
 
@@ -253,7 +253,7 @@
             }
 
             &::after {
-                top: 10px;
+                top: rem(10px);
                 transform: rotate(-45deg);
             }
         }
@@ -282,14 +282,14 @@
 
 .social__item {
     svg {
-        width: 19px;
-        height: 19px;
+        width: rem(19px);
+        height: rem(19px);
         stroke: $dark-400;
         transition: $transition;
     }
 
     & + & {
-        margin-left: 19px;
+        margin-left: rem(19px);
     }
 
     &:hover svg {
@@ -300,20 +300,20 @@
 }
 
 .header-social {
-    margin-right: 35px;
+    margin-right: rem(35px);
 }
 
 .header-select {
     margin-right: 0;
 
     .choices {
-        width: 60px;
+        width: rem(60px);
         text-align: center;
         user-select: none;
 
         &__inner {
-            width: 60px;
-            min-height: 22px;
+            width: rem(60px);
+            min-height: rem(22px);
             font-size: $fs-s;
             font-weight: $fw-medium;
             line-height: $lh-m;
@@ -331,8 +331,8 @@
         &::after {
             top: 50%;
             right: 0;
-            width: 11px;
-            height: 11px;
+            width: rem(11px);
+            height: rem(11px);
             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 11 11'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23787878' d='m5.497 7.441 4.78-4.78a.423.423 0 0 1 .6.599l-5.08 5.079a.423.423 0 0 1-.599 0l-5.08-5.08a.423.423 0 0 1 .6-.598l4.78 4.78Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='%23fff' d='M0 0h11v11H0z' transform='matrix(0 -1 -1 0 11 11)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
             border-style: none;
             transition: 0.15s;
@@ -347,11 +347,11 @@
 
         & .choices__list--dropdown {
             border: none;
-            border-radius: 5px;
+            border-radius: rem(5px);
             transition: $transition;
 
             .choices__item {
-                padding: 5px 0;
+                padding: rem(5px) 0;
                 font-size: $fs-s;
                 font-weight: $fw-medium;
                 line-height: $lh-m;
@@ -385,14 +385,14 @@
 
 .dropdown {
     position: absolute;
-    top: 55px;
+    top: rem(55px);
     left: -100%;
-    width: 974px;
-    height: 462px;
-    padding: 20px 73px 30px 43px;
+    width: rem(974px);
+    height: rem(462px);
+    padding: rem(20px) rem(73px) rem(30px) rem(43px);
     background-color: $light-50;
-    border-radius: 5px;
-    box-shadow: 0 0 30px rgba(71, 71, 71, 0.1);
+    border-radius: rem(5px);
+    box-shadow: 0 0 rem(30px) rgba(71, 71, 71, 0.1);
     opacity: 0;
     transition: $transition;
 }
@@ -402,18 +402,18 @@
 }
 
 .dropdown-item {
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
     font-size: $fs-s;
     line-height: $lh-m;
     color: $dark-100;
 
     &__title {
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
         font-weight: $fw-semibold;
     }
 
     &__point + &__point {
-        margin-top: 16px;
+        margin-top: rem(16px);
     }
 
     &__link {
@@ -427,20 +427,20 @@
 }
 
 .dropdown-submenu {
-    padding-left: 22px;
-    margin-top: 3px;
+    padding-left: rem(22px);
+    margin-top: rem(3px);
 
     &__point {
         position: relative;
-        padding-left: 14px;
+        padding-left: rem(14px);
         font-weight: $fw-light;
 
         &::before {
             position: absolute;
             top: 50%;
             left: 0;
-            width: 8px;
-            height: 0.5px;
+            width: rem(8px);
+            height: rem(0.5px);
             content: "";
             background-color: $dark-100;
             transition: $transition;
@@ -452,7 +452,7 @@
         }
 
         & + & {
-            margin-top: 9px;
+            margin-top: rem(9px);
         }
     }
 
@@ -469,18 +469,18 @@
 .burger-btn {
     position: relative;
     display: none;
-    width: 22px;
-    height: 16px;
-    margin-right: 26px;
+    width: rem(22px);
+    height: rem(16px);
+    margin-right: rem(26px);
     cursor: pointer;
     transition: $transition;
 
     span {
         position: absolute;
-        top: 7px;
+        top: rem(7px);
         display: flex;
         width: 100%;
-        height: 2px;
+        height: rem(2px);
         background-color: $dark-450;
         transition: $transition;
     }
@@ -490,7 +490,7 @@
         position: absolute;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: rem(2px);
         content: "";
         background-color: $dark-450;
         transition: $transition;
@@ -513,7 +513,7 @@
 .header--active {
     .burger-btn {
         &::before {
-            bottom: 4px;
+            bottom: rem(4px);
             transform: rotate(-45deg);
         }
 
@@ -522,7 +522,7 @@
         }
 
         &::after {
-            top: 10px;
+            top: rem(10px);
             transform: rotate(45deg);
         }
     }
@@ -550,3 +550,4 @@
         opacity: 1;
     }
 }
+// === / HEADER ===

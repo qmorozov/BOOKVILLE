@@ -1,10 +1,10 @@
 // === ABOUT ===
 
 .about-section {
-    padding: 50px 0;
-    margin-bottom: 9px;
+    padding: rem(50px) 0;
+    margin-bottom: rem(9px);
     background-color: $light-100;
-    border-radius: 5px;
+    border-radius: rem(5px);
 
     &__pretitle {
         font-size: $fs-s;
@@ -15,7 +15,7 @@
     }
 
     &__title {
-        margin-bottom: 35px;
+        margin-bottom: rem(35px);
         text-align: left;
     }
 
@@ -29,11 +29,11 @@
 
         &-text {
             width: 41%;
-            font-weight: 200;
+            font-weight: $fw-ExtraLight;
             color: $dark-50;
 
             & + & {
-                margin-left: 10px;
+                margin-left: rem(10px);
             }
         }
     }
