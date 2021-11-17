@@ -1162,6 +1162,23 @@
     }
 }
 
+.ordering-card__pay-method {
+    display: flex;
+    margin-top: 14px;
+    font-size: $fs-xxs;
+    line-height: $lh-xs;
+    color: $dark-150;
+
+    &-text {
+        margin-right: 5px;
+        font-weight: $fw-light;
+    }
+
+    &-value {
+        font-weight: $fw-medium;
+    }
+}
+
 .order-card__top {
     display: flex;
     justify-content: space-between;
@@ -1295,6 +1312,8 @@
 }
 
 .payment-details__additional {
+    margin-top: 32px;
+
     &-title {
         font-size: 24px;
         font-weight: $fw-light;
@@ -1330,6 +1349,7 @@
         align-items: center;
         margin-bottom: 28px;
         cursor: pointer;
+        user-select: none;
 
         &-radio {
             display: none;
@@ -1370,6 +1390,61 @@
             line-height: $lh-m;
             color: $dark-150;
         }
+    }
+}
+
+// === successful order ===
+
+.successful {
+    &__inner {
+        margin-bottom: 32px;
+        width: 50%;
+    }
+
+    &__title {
+        margin-bottom: 29px;
+        text-align: left;
+    }
+
+    &__order-data {
+        max-width: 376px;
+    }
+}
+
+.order-value {
+    display: flex;
+    margin-bottom: 18px;
+
+    &__text {
+        margin-right: 26px;
+        font-size: $fs-s;
+        font-weight: $fw-regular;
+        line-height: $lh-m;
+        color: $dark-150;
+    }
+
+    &__amount {
+        font-size: $fs-m;
+        font-weight: $fw-semibold;
+        line-height: $lh-l;
+        color: $dark-200;
+    }
+}
+
+.payment-option {
+    display: flex;
+    margin-bottom: 45px;
+    font-size: $fs-s;
+    line-height: $lh-m;
+    color: $dark-150;
+
+    &__text {
+        margin-right: 5px;
+        font-weight: $fw-regular;
+    }
+
+    &__value {
+        font-weight: $fw-medium;
     }
 }
 

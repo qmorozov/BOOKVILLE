@@ -297,4 +297,4 @@ if (element) {
         lazy: false,
     };
     const mask = IMask(element, maskOptions);
-}
+};

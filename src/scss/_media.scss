@@ -265,6 +265,11 @@
     .catalog__item.card {
         width: 252px;
     }
+
+    // === SUCCESSFUL ===
+    .successful__inner {
+        width: 100%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1294,6 +1299,15 @@
         .input {
             padding: 15px 29px;
         }
+
+        &__payment {
+            max-width: 298px;
+        }
+
+        &__inner {
+            padding-bottom: 450px;
+            margin-bottom: 27px;
+        }
     }
 
     .payment-details {
@@ -1392,17 +1406,6 @@
                 font-size: 16px;
                 line-height: 20px;
             }
-        }
-    }
-
-    .ordering {
-        &__payment {
-            max-width: 298px;
-        }
-
-        &__inner {
-            padding-bottom: 450px;
-            margin-bottom: 27px;
         }
     }
 
@@ -1549,6 +1552,39 @@
         &__description-text {
             margin-top: 14px;
         }
+    }
+
+    // === SUCCESSFUL ===
+    .successful {
+        &__title {
+            margin-bottom: 18px;
+        }
+    }
+
+    .order-value {
+        margin-bottom: 12px;
+
+        &__text {
+            margin-right: 21px;
+            font-size: $fs-xxs;
+            line-height: $lh-xs;
+        }
+
+        &__amount {
+            font-size: $fs-xs;
+            line-height: $lh-s;
+        }
+    }
+
+    .payment-option {
+        margin-bottom: 30px;
+        font-size: $fs-xxs;
+        line-height: $lh-xs;
+    }
+
+    .ordering-card__pay-method {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 
