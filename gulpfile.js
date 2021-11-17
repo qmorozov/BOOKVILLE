@@ -79,9 +79,7 @@ const scriptLibs = () => {
     return src([
         'node_modules/imask/dist/imask.min.js',
         'node_modules/lazysizes/lazysizes.min.js',
-        // 'node_modules/mixitup/dist/mixitup.min.js',
         // 'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',
-        // 'node_modules/fslightbox/index.js',
         'node_modules/nouislider/dist/nouislider.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/aos/dist/aos.js',
