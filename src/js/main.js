@@ -74,7 +74,8 @@ window.addEventListener('click', (e) => {
 
 // === SELECT ===
 
-document.querySelectorAll('.select-item').forEach(function (item) {2
+document.querySelectorAll('.select-item').forEach(function (item) {
+    2
     const choices = new Choices(item, {
         searchEnabled: false,
     });
@@ -298,3 +299,53 @@ if (element) {
     };
     const mask = IMask(element, maskOptions);
 };
+
+// === BASKET ===
+
+if (document.querySelector('.basket')) {
+    const basket = document.querySelectorAll('.basket-product');
+
+    basket.forEach(function(item) {
+    
+        const basketMinus = item.querySelector('.basket-count__btn--minus'),
+             basketPlus = item.querySelector('.basket-count__btn--plus'),
+             basketInput = item.querySelector('.basket-count__input'),
+             basketPrice = item.querySelector('.basket-product__price-num');
+        
+        const startPrice = basketPrice.textContent;
+    
+        let price = +basketPrice.textContent;
+    
+        basketPlus.addEventListener('click', () => {
+            basketInput.value++;
+            basketPrice.textContent = Math.round(price*basketInput.value);
+        });
+    
+        basketMinus.addEventListener('click', (e) => {
+            basketInput.value--;
+            if (basketInput.value < 1) {
+                basketInput.value = 1;
+                item.remove();
+            }
+    
+            basketPrice.textContent = Math.round(+basketPrice.textContent - +startPrice);
+        });
+    
+    });
+    
+    if (!document.querySelector('.basket__grid-item')) {
+        document.querySelector('.basket__subtitle').style.display = 'block';
+        document.querySelector('.basket__content').remove();
+        document.querySelector('.breadcrumbs').remove();
+    };
+    
+    const priceGoods = document.querySelectorAll('.basket-product__price-num');
+    
+    let sum = 0;
+    
+    for (let i = 0; i < priceGoods.length; i++) {
+        sum = sum + +priceGoods[i].textContent;
+    }
+    
+    document.querySelector('.basket__total-num').textContent = sum;
+}

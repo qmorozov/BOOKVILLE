@@ -815,7 +815,9 @@
         left: -100%;
         flex-direction: column;
         width: rem(357px);
-        height: rem(654px);
+        // height: rem(654px);
+        height: fit-content;
+        max-height: calc(100vh - 100px);
         padding: rem(21px) rem(24px);
         overflow-y: scroll;
         background-color: $light-50;
@@ -976,6 +978,46 @@
 
         &__item {
             margin: 0 0 rem(20px) 0;
+        }
+    }
+
+    // === BASKET ===
+    .basket {
+        &__result {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__total {
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            max-width: 100%;
+        }
+
+        &-product {
+            padding: 7px 0;
+
+            &__title {
+                font-size: $fs-xs;
+            }
+
+            &__price {
+                font-size: $fs-s;
+            }
+
+            &__img {
+                width: 60px;
+                height: 70px;
+            }
+        }
+
+        &-count {
+            &__input {
+                width: 25px;
+                height: 25px;
+            }
         }
     }
 }
@@ -1413,6 +1455,49 @@
             margin: rem(5px) 0;
         }
     }
+
+    // === BASKET ===
+
+    .basket-product {
+        justify-content: space-between;
+
+        &__item {
+            display: flex;
+            justify-content: unset;
+            width: auto;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__img {
+            width: 50px;
+            height: 60px;
+        }
+    }
+
+    .basket-count__btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .basket__info {
+        display: none;
+
+        &-item {
+            justify-content: unset;
+            width: auto;
+        }
+    }
+
+    .basket__total {
+        font-size: 16px;
+
+        &-num {
+            font-size: 20px;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -1438,7 +1523,7 @@
     }
 
     .menu__list {
-        height: rem(600px);
+        // height: rem(600px);
     }
 
     // === INTRO ===
@@ -1592,7 +1677,7 @@
     .menu__list {
         top: 0;
         width: rem(300px);
-        height: rem(500px);
+        height: calc(100vh - 100px);
         padding: rem(15px) rem(15px);
     }
 
@@ -1623,3 +1708,9 @@
         }
     }
 }
+
+// @media screen and (orientation: landscape) {
+//     .header-top {
+//         padding: rem(5px) 0;
+//     }
+// }

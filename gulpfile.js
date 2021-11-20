@@ -63,7 +63,6 @@ const styles = () => {
 // === PLUG IN LIBS CSS ===
 const styleLibs = () => {
     return src([
-        // 'node_modules/aos/dist/aos.css'
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.min.css',
         'node_modules/choices.js/public/assets/styles/choices.min.css',
@@ -79,7 +78,6 @@ const scriptLibs = () => {
     return src([
         'node_modules/imask/dist/imask.min.js',
         'node_modules/lazysizes/lazysizes.min.js',
-        // 'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js',
         'node_modules/nouislider/dist/nouislider.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/aos/dist/aos.js',

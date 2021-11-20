@@ -27,7 +27,6 @@
     "gulp-html-minify": "0.0.14",
     "gulp-inject-string": "^1.1.2",
     "gulp-notify": "^4.0.0",
-    "gulp-purgecss": "^4.0.3",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
@@ -38,20 +37,20 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
+    "imask": "^6.2.2",
     "lazysizes": "^5.3.2",
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "nouislider": "^15.5.0",
     "penthouse": "^2.3.2",
+    "purify-css": "^1.2.5",
     "sass": "~1.32.12",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.4.0",
     "stylelint-config-standard": "^22.0.0",
     "swiper": "^6.7.5",
     "webpack": "^5.44.0",
-    "webpack-stream": "^6.1.2",
-    "imask": "^6.2.2"
+    "webpack-stream": "^6.1.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
