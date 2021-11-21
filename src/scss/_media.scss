@@ -100,7 +100,7 @@
 
     // === EVENTS ===
     .events-section__img img {
-        max-width: rem(425px);
+        // max-width: rem(425px);
     }
 
     // === SELECTION ===
@@ -159,8 +159,7 @@
             line-height: $lh-xl;
         }
 
-        &__img img {
-            max-width: rem(400px);
+        &__img {
             max-height: rem(275px);
         }
 
@@ -252,6 +251,10 @@
         &__payment {
             margin-top: rem(20px);
         }
+    }
+
+    .intro__item-img {
+        max-height: 400px;
     }
 }
 
@@ -646,6 +649,10 @@
     .product__attribute-value {
         margin-left: rem(10px);
     }
+
+    .intro__item-img {
+        max-height: 320px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1020,6 +1027,10 @@
             }
         }
     }
+
+    .intro__item-img {
+        max-height: 230px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1111,6 +1122,10 @@
             &-subtitle {
                 font-size: rem(10px);
                 line-height: rem(12px);
+            }
+
+            &-bottom {
+                @include img(rem(381px), rem(90px));
             }
         }
     }
@@ -1670,6 +1685,16 @@
         font-size: rem(12px);
         line-height: rem(15px);
     }
+
+    .intro__item-img {
+        max-height: 170px;
+    }
+
+    .category-price__label {
+        width: 48%;
+        height: rem(38px);
+        padding: rem(8px) rem(10px);
+    }
 }
 
 @media (max-width: 400px) {
@@ -1708,9 +1733,3 @@
         }
     }
 }
-
-// @media screen and (orientation: landscape) {
-//     .header-top {
-//         padding: rem(5px) 0;
-//     }
-// }

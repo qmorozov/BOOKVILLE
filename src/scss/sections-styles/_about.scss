@@ -22,10 +22,10 @@
     &__img {
         width: 37%;
         margin-left: rem(30px);
+        @include img(rem(446px), rem(446px));
 
         img {
             border-radius: rem(5px);
-            @include img(rem(446px), rem(446px));
         }
     }
 

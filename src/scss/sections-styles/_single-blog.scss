@@ -30,11 +30,8 @@
         margin-right: rem(63px);
     }
 
-    &__img img {
-        width: 100%;
-        max-width: rem(522px);
-        height: auto;
-        max-height: rem(522px);
+    &__img {
+        @include img(rem(522px), rem(522px));
     }
 }
 
@@ -45,13 +42,10 @@
 
     &-item {
         margin: rem(7px) rem(5px) 0;
+        @include img(rem(388px), rem(260px));
 
         &:first-child {
             margin-left: 0;
-        }
-
-        img {
-            @include img(rem(388px), rem(260px));
         }
     }
 }

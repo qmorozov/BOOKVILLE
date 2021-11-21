@@ -61,10 +61,8 @@
         }
     }
 
-    &:hover {
-        .intro__btn-text::after {
-            right: rem(-10px);
-        }
+    &:hover .intro__btn-text::after {
+        right: rem(-10px);
     }
 }
 

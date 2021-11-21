@@ -33,17 +33,16 @@
         grid-row: span 2;
 
         .blog__item-img {
-            height: rem(651px);
-
-            img {
-                height: 100%;
-            }
+            @include img(rem(387px), rem(651px));
         }
     }
 
-    &-img img {
-        max-width: rem(387px);
-        border-radius: rem(5px);
+    &-img {
+        @include img(rem(387px), rem(260px));
+
+        img {
+            border-radius: rem(5px);
+        }
     }
 
     &-info {

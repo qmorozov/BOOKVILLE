@@ -15,7 +15,7 @@
 }
 
 .selection__item {
-    width: 381px;
+    width: rem(381px);
     height: fit-content;
     background: $light-50;
     border-radius: rem(5px);
@@ -44,9 +44,12 @@
         color: $dark-600;
     }
 
+    &-bottom {
+        @include img(rem(381px), rem(206px));
+    }
+
     &-img {
         border-radius: rem(5px);
-        @include img(rem(381px), rem(206px));
     }
 
     &:hover {

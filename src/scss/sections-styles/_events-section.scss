@@ -9,9 +9,14 @@
     }
 }
 
-.events-section__img img {
-    border-radius: rem(5px);
-    @include img(525px, 325px);
+.events-section__img {
+    @include img(rem(525px), rem(325px));
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: rem(5px);
+    }
 }
 
 .events-section__info {

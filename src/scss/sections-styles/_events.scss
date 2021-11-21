@@ -15,10 +15,10 @@
 
     &__img {
         margin-left: rem(14px);
+        @include img(rem(312px), rem(312px));
 
         img {
             border-radius: rem(5px);
-            @include img(rem(312px), rem(312px));
         }
     }
 
