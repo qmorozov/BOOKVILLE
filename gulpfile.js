@@ -158,7 +158,7 @@ exports.default = series(clean, parallel(htmlFiles, htmlInclude, scripts, styleL
 // === COMPRESION ALL IMAGES ===
 
 const tinypng = () => {
-	return src(['./src/images/*/**.jpg', './src/images/*/**.png', './src/images/*/**.svg', './src/images/*/**.jpeg'])
+	return src(['./src/images/*/**.jpg', './src/images/*/**.png', './src/images/*/**.svg', './src/images/*/**.jpeg', './src/images/*/**.webp'])
 		.pipe(tiny({
 			key: '8cXMsc4THCHgrJ6gsTgZW7fnG4kZr0q9',
 			log: true,
