@@ -158,7 +158,7 @@ exports.default = series(clean, parallel(htmlFiles, htmlInclude, scripts, styleL
 // === COMPRESION ALL IMAGES ===
 
 const tinypng = () => {
-	return src(['./src/images/*/**.jpg', './src/images/*/**.png', './src/images/*/**.svg', './src/images/*/**.jpeg'])
+	return src(['./src/images/*/**.jpg', './src/images/*/**.png', './src/images/*/**.svg', './src/images/*/**.jpeg', './src/images/*/**.webp'])
 		.pipe(tiny({
 			key: '8cXMsc4THCHgrJ6gsTgZW7fnG4kZr0q9',
 			log: true,
@@ -168,49 +168,49 @@ const tinypng = () => {
 		.pipe(dest('./app/img'))
 }
 
-// const stylesBuild = () => {
-//     return src('./src/scss/**/*.scss')
-//         .pipe(sass({
-//             outputStyle: 'expanded'
-//         }).on('error', notify.onError()))
-//         .pipe(rename({
-//             suffix: '.min'
-//         }))
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['last 8 version']
-//         }))
-//         .pipe(cleanCSS({
-//             level: 2
-//         }))
-//         .pipe(dest('./app/css/'))
-// }
+const stylesBuild = () => {
+    return src('./src/scss/**/*.scss')
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }).on('error', notify.onError()))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 8 version']
+        }))
+        .pipe(cleanCSS({
+            level: 2
+        }))
+        .pipe(dest('./app/css/'))
+}
 
-// const scriptsBuild = () => {
-//     return src('./src/js/main.js')
-//         .pipe(webpackStream({
-//             mode: 'development',
-//             output: {
-//                 filename: 'main.js',
-//             },
-//             module: {
-//                 rules: [{
-//                     test: /\.m?js$/,
-//                     exclude: /(node_modules|bower_components)/,
-//                     use: {
-//                         loader: 'babel-loader',
-//                         options: {
-//                             presets: ['@babel/preset-env']
-//                         }
-//                     }
-//                 }]
-//             },
-//         }))
-//         .on('error', function(err) {
-//             console.error('WEBPACK ERROR', err);
-//             this.emit('end');
-//         })
-//         .pipe(uglify().on("error", notify.onError()))
-//         .pipe(dest('./app/js'))
-// }
+const scriptsBuild = () => {
+    return src('./src/js/main.js')
+        .pipe(webpackStream({
+            mode: 'development',
+            output: {
+                filename: 'main.js',
+            },
+            module: {
+                rules: [{
+                    test: /\.m?js$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
+                    }
+                }]
+            },
+        }))
+        .on('error', function(err) {
+            console.error('WEBPACK ERROR', err);
+            this.emit('end');
+        })
+        .pipe(uglify().on("error", notify.onError()))
+        .pipe(dest('./app/js'))
+}
 
-exports.build = series(clean, parallel(htmlFiles, htmlInclude, scripts, styleLibs, scriptLibs, fonts, imgToApp), styles, tinypng);
+exports.build = series(clean, parallel(htmlFiles, htmlInclude, scripts, styleLibs, scriptLibs, scriptsBuild, stylesBuild, fonts, imgToApp), styles, tinypng);
