@@ -315,6 +315,8 @@ if (document.querySelector('.basket')) {
         const startPrice = basketPrice.textContent;
     
         let price = +basketPrice.textContent;
+
+        basketPrice.textContent = Math.round(price*basketInput.value);
     
         basketPlus.addEventListener('click', () => {
             basketInput.value++;
@@ -329,23 +331,42 @@ if (document.querySelector('.basket')) {
             }
     
             basketPrice.textContent = Math.round(+basketPrice.textContent - +startPrice);
+
+            if (!document.querySelector('.basket-product')) {
+                document.querySelector('.basket__content').remove();
+                document.querySelector('.basket__subtitle').style.display = 'block';
+                document.querySelector('.breadcrumbs').remove();
+            }
         });
     
     });
-    
-    if (!document.querySelector('.basket__grid-item')) {
-        document.querySelector('.basket__subtitle').style.display = 'block';
-        document.querySelector('.basket__content').remove();
-        document.querySelector('.breadcrumbs').remove();
-    };
-    
+
+    const basketBtn = document.querySelectorAll('.basket-count__btn');
+
+    basketBtn.forEach(function(item) {
+        item.addEventListener('click', function() {
+            calcSum();
+        });
+    });
+
+    calcSum();
+
+}
+
+function calcSum() {
     const priceGoods = document.querySelectorAll('.basket-product__price-num');
+
+    if (priceGoods) {
+        let sum = 0;
     
-    let sum = 0;
+        for (let i = 0; i < priceGoods.length; i++) {
+            sum = sum + +priceGoods[i].textContent;
+        }
     
-    for (let i = 0; i < priceGoods.length; i++) {
-        sum = sum + +priceGoods[i].textContent;
+        if (document.querySelector('.basket__total-num')) {
+            document.querySelector('.basket__total-num').textContent = sum;
+        }
+
     }
-    
-    document.querySelector('.basket__total-num').textContent = sum;
+
 }

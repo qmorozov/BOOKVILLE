@@ -1,0 +1,325 @@
+// === PRODUCT - CATALOG ===
+
+.catalog {
+    &__inner {
+        margin-bottom: rem(29px);
+    }
+
+    &__title {
+        margin-bottom: rem(39px);
+        text-align: left;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__sort {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: rem(35px);
+
+        &-btn {
+            position: relative;
+            font-size: $fs-s;
+            font-weight: $fw-light;
+            line-height: $lh-m;
+            color: #494949;
+            cursor: pointer;
+
+            & + & {
+                margin-left: rem(32px);
+            }
+
+            &::before {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0%;
+                height: 1px;
+                content: "";
+                background-color: #494949;
+                transition: $transition;
+            }
+
+            &:hover::before {
+                right: auto;
+                left: 0;
+                width: 100%;
+            }
+
+            &--price {
+                position: relative;
+                padding-right: rem(50px);
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: rem(25px);
+                    height: rem(14px);
+                    content: "";
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='none' viewBox='0 0 25 14'%3e%3cdefs%3e%3cpath id='c' fill='%23fff' d='M0 0h14v14H0z'/%3e%3c/defs%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23525252' d='M6.793.085 2.418 4.46a.292.292 0 1 0 .413.413L6.708.996v12.712a.292.292 0 1 0 .583 0V.996l3.877 3.877a.291.291 0 1 0 .413-.413L7.206.085a.292.292 0 0 0-.413 0Z'/%3e%3c/g%3e%3cg clip-path='url(%23b)'%3e%3cpath fill='%23525252' d='m18.206 13.915 4.375-4.375a.291.291 0 1 0-.412-.413l-3.877 3.877V.292a.292.292 0 1 0-.583 0v12.712l-3.877-3.877a.292.292 0 1 0-.413.413l4.375 4.375a.292.292 0 0 0 .412 0Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cuse xlink:href='%23c' transform='rotate(-90 7 7)'/%3e%3c/clipPath%3e%3cclipPath id='b'%3e%3cuse xlink:href='%23c' transform='rotate(90 12.5 12.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+                    transform: translateY(-50%);
+                }
+            }
+
+            &--active::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        margin-right: rem(5px);
+        margin-bottom: rem(27px);
+
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+
+        &.card {
+            width: rem(263px);
+        }
+    }
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: rem(341px);
+    margin-right: rem(17px);
+
+    &__item-title {
+        margin-bottom: rem(18px);
+        font-size: $fs-s;
+        font-weight: $fw-regular;
+        line-height: $lh-m;
+        color: $dark-150;
+    }
+
+    &__result {
+        margin-bottom: rem(24px);
+        font-size: $fs-xxs;
+        font-weight: $fw-regular;
+        line-height: $lh-xs;
+        color: $dark-150;
+    }
+
+    &__inner {
+        padding: rem(30px) rem(19px) rem(21px) rem(19px);
+        background-color: #faf8f6;
+        border-radius: rem(5px);
+    }
+
+    &__mobile-btn {
+        position: relative;
+        display: none;
+        flex-shrink: 0;
+        width: 100%;
+        padding: rem(30px) rem(19px) rem(21px) rem(19px);
+        font-size: rem(20px);
+        font-weight: $fw-regular;
+        cursor: pointer;
+        background-color: #faf8f6;
+        border-radius: rem(5px) rem(5px) 0 0;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: rem(21px);
+            width: rem(11px);
+            height: rem(6px);
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 11 7'%3e%3cpath fill='%23787878' d='m5.497 5.441 4.78-4.78a.423.423 0 0 1 .6.599l-5.08 5.079a.423.423 0 0 1-.599 0l-5.08-5.08a.423.423 0 0 1 .6-.598l4.78 4.78Z'/%3e%3c/svg%3e ");
+            background-repeat: no-repeat;
+            transition: $transition;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.category-price {
+    margin-bottom: rem(30px);
+
+    &__label {
+        display: inline-block;
+        width: rem(147px);
+        height: rem(49px);
+        padding: rem(14px) rem(22px);
+        border: 1px solid $dark-450;
+        border-radius: rem(8px);
+
+        & + & {
+            margin-left: rem(9px);
+        }
+    }
+
+    &__input {
+        color: #a9a9a9;
+    }
+
+    &__text {
+        margin-right: rem(5px);
+        color: #a9a9a9;
+        user-select: none;
+    }
+
+    &__inputs {
+        margin-bottom: rem(35px);
+    }
+
+    &__slider {
+        width: calc(100% - rem(17px));
+    }
+}
+
+.noUi {
+    &-touch-area {
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            bottom: 50%;
+            left: 50%;
+            width: rem(35px);
+            height: rem(35px);
+            content: "";
+            background-color: rgba($dark-450, 35%);
+            border-radius: 100%;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    &-horizontal {
+        height: rem(3px);
+    }
+
+    &-target {
+        width: 95%;
+        margin: 0 auto;
+        background: #e4d8d3;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    &-connect {
+        cursor: pointer;
+        background-color: $dark-450;
+    }
+
+    &-base {
+        cursor: pointer;
+    }
+
+    &-handle {
+        background: $dark-450;
+        border: none;
+        border-radius: 100%;
+        box-shadow: none;
+
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+
+    &-horizontal .noUi-handle {
+        top: rem(-12px);
+        width: rem(27px);
+        height: rem(27px);
+    }
+}
+
+.filter {
+    & + & {
+        margin-top: rem(24px);
+    }
+
+    &__title {
+        margin-bottom: rem(27px);
+        font-size: $fs-s;
+        font-weight: $fw-regular;
+        line-height: $lh-m;
+        color: $dark-150;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        & + & {
+            margin-top: rem(14px);
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &-fake {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: rem(26px);
+            height: rem(26px);
+            margin-right: rem(20px);
+            border: rem(1px) solid #be907e;
+            border-radius: rem(8px);
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: rem(17px);
+                height: rem(12px);
+                content: "";
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 13'%3e%3cpath fill='%23887569' d='M16.751.507a.85.85 0 0 0-1.202 0L5.365 10.69 1.451 6.776A.85.85 0 0 0 .25 7.978l4.515 4.515a.85.85 0 0 0 1.202 0L16.751 1.71a.85.85 0 0 0 0-1.202Z'/%3e%3c/svg%3e ");
+                background-repeat: no-repeat;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &:checked + &-fake::before {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: $fs-xs;
+        font-weight: $fw-regular;
+        line-height: $lh-s;
+        color: $dark-150;
+    }
+}
+
+// === / PRODUCT - CATALOG ===

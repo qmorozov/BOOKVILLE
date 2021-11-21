@@ -1,0 +1,59 @@
+// === SUCCESSFUL - ORDER ===
+.successful {
+    &__inner {
+        width: 50%;
+        margin-bottom: rem(32px);
+    }
+
+    &__title {
+        margin-bottom: rem(29px);
+        text-align: left;
+    }
+
+    &__order-data {
+        max-width: rem(376px);
+    }
+}
+
+.successful-order-data__title {
+    margin-bottom: 31px;
+    text-align: left;
+}
+
+.order-value {
+    display: flex;
+    margin-bottom: rem(18px);
+
+    &__text {
+        margin-right: rem(26px);
+        font-size: $fs-s;
+        font-weight: $fw-regular;
+        line-height: $lh-m;
+        color: $dark-150;
+    }
+
+    &__amount {
+        font-size: $fs-m;
+        font-weight: $fw-semibold;
+        line-height: $lh-l;
+        color: $dark-200;
+    }
+}
+
+.payment-option {
+    display: flex;
+    margin-bottom: rem(45px);
+    font-size: $fs-s;
+    line-height: $lh-m;
+    color: $dark-150;
+
+    &__text {
+        margin-right: rem(5px);
+        font-weight: $fw-regular;
+    }
+
+    &__value {
+        font-weight: $fw-medium;
+    }
+}
+// === / SUCCESSFUL - ORDER ===

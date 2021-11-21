@@ -1,0 +1,152 @@
+// === BASKET ===
+.basket {
+    &__inner {
+        margin-bottom: rem(25px);
+    }
+
+    &__title {
+        margin-bottom: rem(22px);
+        text-align: left;
+    }
+
+    &__grid {
+        margin-bottom: rem(26px);
+    }
+
+    &__subtitle {
+        display: none;
+    }
+}
+
+.basket__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: rem(18px);
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+}
+
+.basket-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: rem(13px) 0;
+    border-top: rem(1px) solid #cdcdcd7e;
+    border-bottom: rem(1px) solid #cdcdcd7e;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+
+    &:nth-child(2) {
+        border-top: none;
+    }
+
+    &__img {
+        width: rem(73px);
+        height: rem(80px);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        font-size: $fs-m;
+        font-weight: $fw-regular;
+        white-space: nowrap;
+    }
+
+    &__price {
+        font-size: $fs-l;
+        font-weight: $fw-medium;
+
+        &-currency {
+            margin-left: rem(4px);
+            font-size: $fs-xxs;
+            font-weight: $fw-regular;
+        }
+    }
+}
+
+.basket-count {
+    display: flex;
+    align-items: center;
+
+    &__btn {
+        position: relative;
+        display: inline-block;
+        width: rem(35px);
+        height: rem(35px);
+        cursor: pointer;
+        border: rem(1px) solid $dark-450;
+        border-radius: 100%;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: rem(23px);
+            color: $dark-450;
+            transform: translate(-50%, -50%);
+        }
+
+        &--plus::before {
+            content: "+";
+        }
+
+        &--minus::before {
+            top: 49%;
+            font-size: rem(30px);
+            content: "-";
+        }
+    }
+
+    &__input {
+        width: rem(40px);
+        height: rem(30px);
+        padding: rem(3px);
+        font-size: rem(24px);
+        font-weight: $fw-regular;
+        text-align: center;
+    }
+}
+
+.basket__result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.basket__total {
+    display: flex;
+    margin-right: rem(32px);
+    font-size: $fs-m;
+    font-weight: $fw-medium;
+
+    &-text {
+        margin-right: rem(5px);
+    }
+
+    &-num {
+        margin-right: rem(2px);
+        font-size: rem(24px);
+    }
+}
+
+.basket__btn {
+    width: 100%;
+    max-width: rem(360px);
+    text-align: center;
+}
+// === / BASKET ===

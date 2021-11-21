@@ -52,5 +52,7 @@
     "webpack": "^5.44.0",
     "webpack-stream": "^6.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-uncss": "^1.0.6"
+  }
 }

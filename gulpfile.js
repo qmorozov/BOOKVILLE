@@ -82,7 +82,6 @@ const scriptLibs = () => {
         'node_modules/swiper/swiper-bundle.min.js',
         'node_modules/aos/dist/aos.js',
         'node_modules/choices.js/public/assets/scripts/choices.min.js'
-            
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify().on("error", notify.onError()))

@@ -1,0 +1,53 @@
+// === ABOUT ===
+.about {
+    &__title {
+        text-align: left;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+
+    &__info {
+        width: 47%;
+    }
+
+    &__text + &__text {
+        margin-top: rem(21px);
+    }
+
+    &__img {
+        width: 37%;
+        margin-left: rem(30px);
+
+        img {
+            border-radius: rem(5px);
+            @include img(rem(446px), rem(446px));
+        }
+    }
+
+    &__quote {
+        margin-bottom: rem(51px);
+        text-align: center;
+    }
+
+    &__gallery {
+        display: flex;
+        margin-bottom: rem(27px);
+
+        &-img {
+            img {
+                border-radius: rem(5px);
+                @include img(rem(593px), rem(396px));
+            }
+
+            & + & {
+                margin-left: rem(11px);
+            }
+        }
+    }
+}
+// === / ABOUT ===

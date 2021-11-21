@@ -1,0 +1,92 @@
+// === DELIVERY ===
+.delivery {
+    &__inner {
+        margin-bottom: rem(32px);
+    }
+
+    &__title {
+        margin-bottom: rem(27px);
+        text-align: left;
+    }
+
+    &__info + &__info {
+        margin-top: rem(46px);
+    }
+
+    &__subtitle {
+        margin-bottom: rem(13px);
+        font-size: rem(24px);
+        line-height: rem(29px);
+        color: $dark-150;
+        @include Montserrat($weight: $fw-medium);
+    }
+
+    &__text {
+        line-height: $lh-s;
+
+        & + & {
+            margin-top: rem(25px);
+        }
+    }
+}
+
+.delivery__content {
+    margin: rem(32px) 0 rem(38px);
+
+    .delivery__subtitle {
+        margin-bottom: rem(50px);
+    }
+
+    .delivery__text {
+        margin-top: 0;
+        margin-left: rem(41px);
+    }
+}
+
+.delivery__item {
+    display: flex;
+    align-items: flex-start;
+
+    & + & {
+        margin-top: rem(41px);
+    }
+}
+
+.delivery__point {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: rem(304px);
+
+    &-num {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: rem(58px);
+        max-width: rem(58px);
+        height: rem(58px);
+        margin-right: rem(19px);
+        font-size: rem(30px);
+        font-weight: $fw-light;
+        line-height: rem(37px);
+        color: $dark-450;
+        user-select: none;
+        border: rem(0.5px) solid $dark-450;
+        border-radius: 100%;
+
+        &::after {
+            position: absolute;
+            top: rem(-5px);
+            right: rem(-5px);
+            z-index: -1;
+            width: rem(58px);
+            height: rem(58px);
+            content: "";
+            background-color: $light-250;
+            border-radius: 100%;
+        }
+    }
+}
+// === / DELIVERY ===

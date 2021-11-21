@@ -1,0 +1,29 @@
+// === EVENTS ===
+.events {
+    margin-bottom: rem(30px);
+
+    &__title {
+        margin-bottom: rem(23px);
+        text-align: left;
+    }
+
+    &__images {
+        display: flex;
+        float: right;
+        margin-bottom: rem(10px);
+    }
+
+    &__img {
+        margin-left: rem(14px);
+
+        img {
+            border-radius: rem(5px);
+            @include img(rem(312px), rem(312px));
+        }
+    }
+
+    &__text + &__text {
+        margin-top: rem(20px);
+    }
+}
+// === / EVENTS ===
