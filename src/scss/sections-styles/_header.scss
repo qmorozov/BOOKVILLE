@@ -166,7 +166,7 @@
             display: flex;
             width: rem(19px);
             height: rem(2px);
-            background-color: $dark-450;
+            background-color: #322b26;
             transition: $transition;
         }
 
@@ -177,7 +177,7 @@
             width: 100%;
             height: rem(2px);
             content: "";
-            background-color: $dark-450;
+            background-color: #322b26;
             transition: $transition;
         }
 
@@ -195,7 +195,7 @@
         font-size: $fs-s;
         font-weight: $fw-medium;
         line-height: $lh-m;
-        color: $dark-450;
+        color: #322b26;
         transition: $transition;
     }
 
@@ -205,12 +205,12 @@
                 span,
                 &::before,
                 &::after {
-                    background-color: darken($dark-450, 30);
+                    background-color: lighten(#322b26, 30);
                 }
             }
 
             &__text {
-                color: darken($dark-450, 30);
+                color: lighten(#322b26, 30);
             }
         }
     }

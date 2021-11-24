@@ -355,18 +355,23 @@ if (document.querySelector('.basket')) {
 
 function calcSum() {
     const priceGoods = document.querySelectorAll('.basket-product__price-num');
-
     if (priceGoods) {
         let sum = 0;
-    
         for (let i = 0; i < priceGoods.length; i++) {
             sum = sum + +priceGoods[i].textContent;
         }
-    
         if (document.querySelector('.basket__total-num')) {
             document.querySelector('.basket__total-num').textContent = sum;
         }
-
     }
-
 }
+
+// === AOS ===
+
+// AOS.init();
+
+AOS.init({
+    duration: 800,
+    offset: 130,
+    once: true,
+});

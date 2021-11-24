@@ -1,359 +1,394 @@
 <!-- HEADER -->
 <header class="header">
-    <div class="container">
+    <div class="header__inner">
+        <div class="container">
 
-        <div class="header-top">
+            <div class="header-top">
 
-            <div class="header__phone">
-                <a href="tel:79991400000" class="phone">
-                    +7 999 140 00 00
-                </a>
-            </div>
+                <div class="header__phone">
+                    <a href="tel:79991400000" class="phone">
+                        +7 999 140 00 00
+                    </a>
+                </div>
 
-            <div class="header__mobile-items">
-                <button class="burger-btn" type="button" aria-label="Burger Btn">
-                    <span></span>
-                </button>
+                <div class="header__mobile-items">
+                    <button class="burger-btn" type="button" aria-label="Burger Btn">
+                        <span></span>
+                    </button>
 
-                <div class="search-button search-button-mobile">
-                    <a class="search-button__link" aria-label="search">
-                        <svg fill="none" viewBox="0 0 28 28">
-                            <g clip-path="url(#a)">
+                    <div class="search-button search-button-mobile">
+                        <a class="search-button__link" aria-label="search">
+                            <svg fill="none" viewBox="0 0 28 28">
+                                <g clip-path="url(#a)">
+                                    <path
+                                        d="m27.765 26.572-6.804-6.804a11.89 11.89 0 0 0 2.93-7.83C23.891 5.353 18.533 0 11.953 0 5.365 0 .013 5.358.013 11.939c0 6.58 5.359 11.939 11.94 11.939a11.89 11.89 0 0 0 7.828-2.93l6.805 6.804a.844.844 0 0 0 .59.248.84.84 0 0 0 .59-1.428ZM1.684 11.94c0-5.662 4.606-10.263 10.262-10.263 5.662 0 10.263 4.607 10.263 10.263s-4.6 10.268-10.263 10.268c-5.656 0-10.262-4.606-10.262-10.268Z" />
+                                </g>
+                                <defs>
+                                    <clipPath>
+                                        <path fill="#fff" d="M0 0h28v28H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__logo">
+                    <a class="logo" href="index.html" aria-label="logo">
+                        <img class="logo__img lazyload" data-src="images/content/logo.webp" alt="logo">
+                    </a>
+                </div>
+
+                <div class="header__items">
+                    <div class="header__item search-button">
+                        <a class="header__item-link search-button__link" href="javascript:void(0)" aria-label="search">
+                            <svg fill="none" viewBox="0 0 28 28">
+                                <g clip-path="url(#a)">
+                                    <path
+                                        d="m27.765 26.572-6.804-6.804a11.89 11.89 0 0 0 2.93-7.83C23.891 5.353 18.533 0 11.953 0 5.365 0 .013 5.358.013 11.939c0 6.58 5.359 11.939 11.94 11.939a11.89 11.89 0 0 0 7.828-2.93l6.805 6.804a.844.844 0 0 0 .59.248.84.84 0 0 0 .59-1.428ZM1.684 11.94c0-5.662 4.606-10.263 10.262-10.263 5.662 0 10.263 4.607 10.263 10.263s-4.6 10.268-10.263 10.268c-5.656 0-10.262-4.606-10.262-10.268Z" />
+                                </g>
+                                <defs>
+                                    <clipPath>
+                                        <path fill="#fff" d="M0 0h28v28H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__item header__item--wish">
+                        <a class="header__item-link" href="chosen.html" aria-label="wish">
+                            <svg fill="none" viewBox="0 0 31 31">
                                 <path
-                                    d="m27.765 26.572-6.804-6.804a11.89 11.89 0 0 0 2.93-7.83C23.891 5.353 18.533 0 11.953 0 5.365 0 .013 5.358.013 11.939c0 6.58 5.359 11.939 11.94 11.939a11.89 11.89 0 0 0 7.828-2.93l6.805 6.804a.844.844 0 0 0 .59.248.84.84 0 0 0 .59-1.428ZM1.684 11.94c0-5.662 4.606-10.263 10.262-10.263 5.662 0 10.263 4.607 10.263 10.263s-4.6 10.268-10.263 10.268c-5.656 0-10.262-4.606-10.262-10.268Z" />
-                            </g>
-                            <defs>
-                                <clipPath>
-                                    <path fill="#fff" d="M0 0h28v28H0z" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
+                                    d="M8.79 2.668a8.711 8.711 0 0 1 6.71 3.1 8.594 8.594 0 0 1 6.71-3.1 8.79 8.79 0 0 1 8.79 8.79c0 8.319-14.519 16.442-15.108 16.756a.706.706 0 0 1-.784 0C14.519 27.9 0 19.894 0 11.458a8.79 8.79 0 0 1 8.79-8.79Zm6.71 23.976c2.276-1.334 13.93-8.437 13.93-15.186a7.22 7.22 0 0 0-7.22-7.22 7.063 7.063 0 0 0-6.043 3.257.824.824 0 0 1-1.334 0A7.22 7.22 0 0 0 1.57 11.458c0 6.828 11.654 13.891 13.93 15.186Z" />
+                            </svg>
+                        </a>
+                        <span class="header__item-count">10</span>
+                    </div>
+                    <div class="header__item header__item--basket">
+                        <a class="header__item-link" href="basket.html" aria-label="basket">
+                            <svg fill="none" viewBox="0 0 32 32">
+                                <g>
+                                    <path
+                                        d="M31.869 13.603a.666.666 0 0 0-.535-.27H.667a.665.665 0 0 0-.639.857l3.43 11.434A3.314 3.314 0 0 0 6.65 28h18.7a3.312 3.312 0 0 0 3.192-2.375l3.43-11.433a.664.664 0 0 0-.103-.59ZM27.266 25.24a1.991 1.991 0 0 1-1.917 1.426H6.65a1.99 1.99 0 0 1-1.916-1.426L1.563 14.667h28.875L27.266 25.24Z" />
+                                    <path
+                                        d="M14.331 4.088a.667.667 0 0 0-.91.248L8.087 13.67a.668.668 0 0 0 1.16.662l5.334-9.334a.668.668 0 0 0-.25-.909Zm9.582 9.582L18.58 4.335a.669.669 0 0 0-1.16.661l5.333 9.334a.668.668 0 0 0 1.16-.662Z" />
+                                </g>
+                                <defs>
+                                    <clipPath>
+                                        <path fill="#fff" d="M0 0h32v32H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <span class="header__item-count">11</span>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="header__logo">
-                <a class="logo" href="index.html" aria-label="logo">
-                    <img class="logo__img lazyload" data-src="images/content/logo.webp" alt="logo">
-                </a>
-            </div>
+            <div class="header-bottom">
 
-            <div class="header__items">
-                <div class="header__item search-button">
-                    <a class="header__item-link search-button__link" href="javascript:void(0)" aria-label="search">
-                        <svg fill="none" viewBox="0 0 28 28">
-                            <g clip-path="url(#a)">
-                                <path
-                                    d="m27.765 26.572-6.804-6.804a11.89 11.89 0 0 0 2.93-7.83C23.891 5.353 18.533 0 11.953 0 5.365 0 .013 5.358.013 11.939c0 6.58 5.359 11.939 11.94 11.939a11.89 11.89 0 0 0 7.828-2.93l6.805 6.804a.844.844 0 0 0 .59.248.84.84 0 0 0 .59-1.428ZM1.684 11.94c0-5.662 4.606-10.263 10.262-10.263 5.662 0 10.263 4.607 10.263 10.263s-4.6 10.268-10.263 10.268c-5.656 0-10.262-4.606-10.262-10.268Z" />
-                            </g>
-                            <defs>
-                                <clipPath>
-                                    <path fill="#fff" d="M0 0h28v28H0z" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-                <div class="header__item header__item--wish">
-                    <a class="header__item-link" href="chosen.html" aria-label="wish">
-                        <svg fill="none" viewBox="0 0 31 31">
-                            <path
-                                d="M8.79 2.668a8.711 8.711 0 0 1 6.71 3.1 8.594 8.594 0 0 1 6.71-3.1 8.79 8.79 0 0 1 8.79 8.79c0 8.319-14.519 16.442-15.108 16.756a.706.706 0 0 1-.784 0C14.519 27.9 0 19.894 0 11.458a8.79 8.79 0 0 1 8.79-8.79Zm6.71 23.976c2.276-1.334 13.93-8.437 13.93-15.186a7.22 7.22 0 0 0-7.22-7.22 7.063 7.063 0 0 0-6.043 3.257.824.824 0 0 1-1.334 0A7.22 7.22 0 0 0 1.57 11.458c0 6.828 11.654 13.891 13.93 15.186Z" />
-                        </svg>
-                    </a>
-                    <span class="header__item-count">10</span>
-                </div>
-                <div class="header__item header__item--basket">
-                    <a class="header__item-link" href="basket.html" aria-label="basket">
-                        <svg fill="none" viewBox="0 0 32 32">
+                <nav class="menu">
+                    <ul class="menu__list">
+
+                        <li class="header-submenu menu__list-item">
+                            <div class="header-submenu__burger">
+                                <span></span>
+                            </div>
+                            <div class="header-submenu__text">
+                                Подразделы
+                            </div>
+                        </li>
+
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="about.html">
+                                О нас
+                            </a>
+                        </li>
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="events.html">
+                                Мероприятия
+                            </a>
+                        </li>
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="sales.html">
+                                Скидки
+                            </a>
+                        </li>
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="blog.html">
+                                Блог
+                            </a>
+                        </li>
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="delivery.html">
+                                Доставка и оплата
+                            </a>
+                        </li>
+
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="contact.html">
+                                Контакты
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <div class="dropdown-items">
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Книги
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Художественная литература
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Саморазвитие
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Психология
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Философия
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Здоровье
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Книги для детей
+                                        </a>
+                                        <ul class="dropdown-submenu">
+                                            <li class="dropdown-submenu__point">
+                                                <a class="dropdown-submenu__link" href="product-category.html"
+                                                    aria-label="Dropdown submenu">
+                                                    для 0 - 3 лет
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu__point">
+                                                <a class="dropdown-submenu__link" href="product-category.html"
+                                                    aria-label="Dropdown submenu">
+                                                    для 3 - 7 лет
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu__point">
+                                                <a class="dropdown-submenu__link" href="product-category.html"
+                                                    aria-label="Dropdown submenu">
+                                                    для 7 - 10 лет
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Книги для подростков
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Эксклюзивные издания
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Игры
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Детские
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Взрослые
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Канцеляркие товары
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Блокноты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Тетради
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Планеры и трекеры
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Ручки
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Карандаши и фломастеры
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Подарочные наборы
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="dropdown-item">
+                                    <li class="dropdown-item__title">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Упаковка
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Упаковочная бумага
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Коробки
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Ленты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Конверты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Открытки
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Пакеты
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item__point">
+                                        <a class="dropdown-item__link" href="product-category.html"
+                                            aria-label="Dropdown menu">
+                                            Подарочный декор
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-social social">
+                    <a class="social__item" href="https://www.facebook.com/bookville.md/" aria-label="Social facebook"
+                        target="_blank" rel="noopener">
+                        <svg fill="none" viewBox="0 0 19 19">
                             <g>
                                 <path
-                                    d="M31.869 13.603a.666.666 0 0 0-.535-.27H.667a.665.665 0 0 0-.639.857l3.43 11.434A3.314 3.314 0 0 0 6.65 28h18.7a3.312 3.312 0 0 0 3.192-2.375l3.43-11.433a.664.664 0 0 0-.103-.59ZM27.266 25.24a1.991 1.991 0 0 1-1.917 1.426H6.65a1.99 1.99 0 0 1-1.916-1.426L1.563 14.667h28.875L27.266 25.24Z" />
-                                <path
-                                    d="M14.331 4.088a.667.667 0 0 0-.91.248L8.087 13.67a.668.668 0 0 0 1.16.662l5.334-9.334a.668.668 0 0 0-.25-.909Zm9.582 9.582L18.58 4.335a.669.669 0 0 0-1.16.661l5.333 9.334a.668.668 0 0 0 1.16-.662Z" />
+                                    d="M10.783 18.963h-3.05a.924.924 0 0 1-.923-.922v-6.863H5.032a.924.924 0 0 1-.924-.921V7.316c0-.508.415-.922.924-.922H6.81V4.922c0-1.46.46-2.703 1.329-3.593.873-.894 2.093-1.366 3.528-1.366l2.325.004c.508 0 .921.414.921.921v2.73a.923.923 0 0 1-.923.922l-1.565.001c-.477 0-.599.095-.625.125-.043.048-.094.186-.094.565v1.163h2.167a.925.925 0 0 1 .932.922l-.001 2.94a.923.923 0 0 1-.924.922h-2.174v6.863a.924.924 0 0 1-.923.922Zm-2.856-1.114h2.663v-7.17c0-.339.277-.615.617-.615h2.48l.002-2.556h-2.483a.617.617 0 0 1-.616-.615V5.23c0-.435.044-.93.373-1.302.398-.45 1.025-.502 1.462-.502h1.372V1.08l-2.131-.003c-2.306 0-3.74 1.473-3.74 3.845v1.97c0 .34-.276.616-.616.616H5.224v2.556H7.31c.34 0 .617.276.617.616v7.169ZM13.99 1.081Z" />
                             </g>
                             <defs>
                                 <clipPath>
-                                    <path fill="#fff" d="M0 0h32v32H0z" />
+                                    <path fill="#fff" d="M0 0h19v19H0z" />
                                 </clipPath>
                             </defs>
                         </svg>
                     </a>
-                    <span class="header__item-count">11</span>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="header-bottom">
-
-            <nav class="menu">
-                <ul class="menu__list">
-
-                    <li class="header-submenu menu__list-item">
-                        <div class="header-submenu__burger">
-                            <span></span>
-                        </div>
-                        <div class="header-submenu__text">
-                            Подразделы
-                        </div>
-                    </li>
-                        
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="about.html">
-                            О нас
-                        </a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="events.html">
-                            Мероприятия
-                        </a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="sales.html">
-                            Скидки
-                        </a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="blog.html">
-                            Блог
-                        </a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="delivery.html">
-                            Доставка и оплата
-                        </a>
-                    </li>
-
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="contact.html">
-                            Контакты
-                        </a>
-                    </li>
-
-                    <li class="dropdown">
-                        <div class="dropdown-items">
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Книги
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Художественная литература
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Саморазвитие
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Психология
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Философия
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Здоровье
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Книги для детей
-                                    </a>
-                                    <ul class="dropdown-submenu">
-                                        <li class="dropdown-submenu__point">
-                                            <a class="dropdown-submenu__link" href="product-category.html" aria-label="Dropdown submenu">
-                                                для 0 - 3 лет
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-submenu__point">
-                                            <a class="dropdown-submenu__link" href="product-category.html" aria-label="Dropdown submenu">
-                                                для 3 - 7 лет
-                                            </a>
-                                        </li>
-                                        <li class="dropdown-submenu__point">
-                                            <a class="dropdown-submenu__link" href="product-category.html" aria-label="Dropdown submenu">
-                                                для 7 - 10 лет
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Книги для подростков
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Эксклюзивные издания
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Игры
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Детские
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Взрослые
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Канцеляркие товары
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Блокноты
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Тетради
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Планеры и трекеры
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Ручки
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Карандаши и фломастеры
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Сертификаты
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Подарочные наборы
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-item">
-                                <li class="dropdown-item__title">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Упаковка
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Упаковочная бумага
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Коробки
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Ленты
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Конверты
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Открытки
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Пакеты
-                                    </a>
-                                </li>
-                                <li class="dropdown-item__point">
-                                    <a class="dropdown-item__link" href="product-category.html" aria-label="Dropdown menu">
-                                        Подарочный декор
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <div class="header-social social">
-                <a class="social__item" href="https://www.facebook.com/bookville.md/" aria-label="Social facebook" target="_blank" rel="noopener">
-                    <svg fill="none" viewBox="0 0 19 19">
-                        <g>
+                    <a class="social__item" href="https://www.instagram.com/bookville.md/?hl=ru"
+                        aria-label="Social instagram" target="_blank" rel="noopener">
+                        <svg fill="none" viewBox="0 0 19 19">
                             <path
-                                d="M10.783 18.963h-3.05a.924.924 0 0 1-.923-.922v-6.863H5.032a.924.924 0 0 1-.924-.921V7.316c0-.508.415-.922.924-.922H6.81V4.922c0-1.46.46-2.703 1.329-3.593.873-.894 2.093-1.366 3.528-1.366l2.325.004c.508 0 .921.414.921.921v2.73a.923.923 0 0 1-.923.922l-1.565.001c-.477 0-.599.095-.625.125-.043.048-.094.186-.094.565v1.163h2.167a.925.925 0 0 1 .932.922l-.001 2.94a.923.923 0 0 1-.924.922h-2.174v6.863a.924.924 0 0 1-.923.922Zm-2.856-1.114h2.663v-7.17c0-.339.277-.615.617-.615h2.48l.002-2.556h-2.483a.617.617 0 0 1-.616-.615V5.23c0-.435.044-.93.373-1.302.398-.45 1.025-.502 1.462-.502h1.372V1.08l-2.131-.003c-2.306 0-3.74 1.473-3.74 3.845v1.97c0 .34-.276.616-.616.616H5.224v2.556H7.31c.34 0 .617.276.617.616v7.169ZM13.99 1.081Z" />
-                        </g>
-                        <defs>
-                            <clipPath>
-                                <path fill="#fff" d="M0 0h19v19H0z" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a class="social__item" href="https://www.instagram.com/bookville.md/?hl=ru" aria-label="Social instagram" target="_blank" rel="noopener">
-                    <svg fill="none" viewBox="0 0 19 19">
-                        <path
-                            d="M13.857 0H5.143A5.149 5.149 0 0 0 0 5.143v8.714A5.149 5.149 0 0 0 5.143 19h8.714A5.149 5.149 0 0 0 19 13.857V5.143A5.149 5.149 0 0 0 13.857 0Zm4.03 13.857a4.034 4.034 0 0 1-4.03 4.03H5.143a4.034 4.034 0 0 1-4.03-4.03V5.143a4.034 4.034 0 0 1 4.03-4.03h8.714a4.034 4.034 0 0 1 4.03 4.03v8.714Z" />
-                        <path
-                            d="M9.5 4.305A5.201 5.201 0 0 0 4.305 9.5 5.201 5.201 0 0 0 9.5 14.695 5.201 5.201 0 0 0 14.695 9.5 5.201 5.201 0 0 0 9.5 4.305Zm0 9.276A4.086 4.086 0 0 1 5.419 9.5a4.086 4.086 0 0 1 4.08-4.081 4.086 4.086 0 0 1 4.082 4.08A4.086 4.086 0 0 1 9.5 13.581ZM14.82 2.46c-.847 0-1.536.688-1.536 1.535 0 .846.689 1.535 1.535 1.535.847 0 1.536-.689 1.536-1.535 0-.847-.69-1.535-1.536-1.535Zm0 1.956a.422.422 0 1 1 0-.844.422.422 0 0 1 0 .844Z" />
-                    </svg>
-                </a>
-            </div>
+                                d="M13.857 0H5.143A5.149 5.149 0 0 0 0 5.143v8.714A5.149 5.149 0 0 0 5.143 19h8.714A5.149 5.149 0 0 0 19 13.857V5.143A5.149 5.149 0 0 0 13.857 0Zm4.03 13.857a4.034 4.034 0 0 1-4.03 4.03H5.143a4.034 4.034 0 0 1-4.03-4.03V5.143a4.034 4.034 0 0 1 4.03-4.03h8.714a4.034 4.034 0 0 1 4.03 4.03v8.714Z" />
+                            <path
+                                d="M9.5 4.305A5.201 5.201 0 0 0 4.305 9.5 5.201 5.201 0 0 0 9.5 14.695 5.201 5.201 0 0 0 14.695 9.5 5.201 5.201 0 0 0 9.5 4.305Zm0 9.276A4.086 4.086 0 0 1 5.419 9.5a4.086 4.086 0 0 1 4.08-4.081 4.086 4.086 0 0 1 4.082 4.08A4.086 4.086 0 0 1 9.5 13.581ZM14.82 2.46c-.847 0-1.536.688-1.536 1.535 0 .846.689 1.535 1.535 1.535.847 0 1.536-.689 1.536-1.535 0-.847-.69-1.535-1.536-1.535Zm0 1.956a.422.422 0 1 1 0-.844.422.422 0 0 1 0 .844Z" />
+                        </svg>
+                    </a>
+                </div>
 
-            <div class="header-select">
-                <select class="select-item" name="languages" aria-label="languages">
-                    <option value="ua">UA</option>
-                    <option value="en" selected>EN</option>
-                    <option value="ru">RU</option>
-                </select>
+                <div class="header-select">
+                    <select class="select-item" name="languages" aria-label="languages">
+                        <option value="ua">UA</option>
+                        <option value="en" selected>EN</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+
             </div>
 
         </div>
-
     </div>
 </header>
 

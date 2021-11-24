@@ -66,7 +66,8 @@ const styleLibs = () => {
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.min.css',
         'node_modules/choices.js/public/assets/styles/choices.min.css',
-        'node_modules/nouislider/dist/nouislider.min.css'
+        'node_modules/nouislider/dist/nouislider.min.css',
+        'node_modules/aos/dist/aos.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -80,8 +81,8 @@ const scriptLibs = () => {
         'node_modules/lazysizes/lazysizes.min.js',
         'node_modules/nouislider/dist/nouislider.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
-        'node_modules/aos/dist/aos.js',
-        'node_modules/choices.js/public/assets/scripts/choices.min.js'
+        'node_modules/choices.js/public/assets/scripts/choices.min.js',
+        'node_modules/aos/dist/aos.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify().on("error", notify.onError()))
