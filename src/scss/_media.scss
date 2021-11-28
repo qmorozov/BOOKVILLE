@@ -1086,6 +1086,8 @@
 
     // === MAON GOODS ===
     .main-goods {
+        padding: rem(25px) 0;
+
         &__title.title {
             font-size: $fs-l;
             line-height: $lh-xl;
