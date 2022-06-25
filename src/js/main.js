@@ -44,14 +44,6 @@ document.querySelectorAll('.card__wish').forEach(function (item) {
     });
 });
 
-// === CARD BUY BTN ===
-
-// document.querySelectorAll('.card__buy-btn').forEach(function (item) {
-//     item.addEventListener('click', function () {
-//         item.classList.toggle('card__buy-btn--choose');
-//     });
-// });
-
 // === SEARCH BUTTON ===
 
 const searchForm = document.querySelector('.search');
@@ -116,9 +108,6 @@ let introSlider = new Swiper(".intro__slider", {
     speed: 1000,
     loop: true,
     autoplay: true,
-    // autoplay: {
-    //     delay: 7000,
-    // },
     grabCursor: true,
     effect: "fade",
     navigation: {
@@ -169,10 +158,6 @@ if (aboutContainer) {
 let mainGoods = new Swiper(".main-goods__slider", {
     slideClass: 'main-goods__item',
     wrapperClass: 'main-goods__wrapper',
-    // speed: 900,
-    // autoplay: {
-    //     delay: 3000,
-    // },
     spaceBetween: 28,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -212,10 +197,6 @@ let product = new Swiper(".product__gallery", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // speed: 900,
-    // autoplay: {
-    //     delay: 5000,
-    // },
 });
 
 document.querySelectorAll('.product__wish').forEach(function (item) {
@@ -365,9 +346,6 @@ function calcSum() {
         }
     }
 }
-
-
-// /////////////////////////////////////////////////////////////////////////////////////
 
 // === AOS ===
 
