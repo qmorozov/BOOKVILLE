@@ -2,12 +2,20 @@
 
 // === RESET STYLES ===
 
-*,
-*::after,
-*::before {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    outline-offset: 20px;
+    transition: 0.2s all ease;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+        border-radius: 3px;
+        outline: 4px solid #cbbb9f;
+        outline-offset: 0;
+    }
 }
 
 html {
@@ -73,12 +81,8 @@ a {
 }
 
 img {
-    display: flex;
+    // display: flex;
     object-fit: cover;
-}
-
-* {
-    -webkit-tap-highlight-color: transparent;
 }
 
 h1,
