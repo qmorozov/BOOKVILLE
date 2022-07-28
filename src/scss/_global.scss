@@ -95,6 +95,10 @@ h6 {
     margin: 0;
 }
 
+main {
+    margin-bottom: auto;
+}
+
 // === GLOBAL STYLE ===
 
 body {
@@ -396,6 +400,7 @@ body {
     &__price {
         position: relative;
         padding-right: rem(17px);
+        width: fit-content;
         font-size: $fs-m;
         line-height: $lh-l;
         color: $dark-200;
@@ -512,6 +517,11 @@ body {
         width: rem(137px);
         height: rem(214px);
         padding: rem(5px) rem(7px);
+
+        &-link {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__img {
             width: rem(99px);

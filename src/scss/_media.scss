@@ -2,11 +2,11 @@
 
 @media (max-width: 1250px) {
     // === INTRO ===
-    .intro__slider-next::before {
+    .intro__slider-next {
         right: 0%;
     }
 
-    .intro__slider-prev::before {
+    .intro__slider-prev {
         left: 0%;
     }
 
@@ -764,7 +764,7 @@
 
         &-top {
             align-items: center;
-            padding: rem(12px) 0;
+            padding: rem(5px) 0;
         }
 
         & .logo__img {
@@ -949,11 +949,11 @@
     }
 
     // === INTRO ===
-    .intro__slider-next::before {
+    .intro__slider-next {
         right: rem(-5px);
     }
 
-    .intro__slider-prev::before {
+    .intro__slider-prev {
         left: rem(-5px);
     }
 
